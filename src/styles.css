@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:100");
+/* line 6, ../compass/sass/views/_home.scss */
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: #323232;
+  background-color: #ededed;
+  font-family: "Work Sans", sans-serif;
+  transition: all 2s;
+}
+/* line 14, ../compass/sass/views/_home.scss */
+.App .MainMenu {
+  margin-left: -16vw;
+  width: 20vw;
+  height: 100vh;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 1em;
+  color: #1BA4BA;
+  transition: all 1s;
+  transform: translate(0vw);
+}
+/* line 20, ../compass/sass/views/_home.scss */
+.App .MainMenu:hover {
+  transition: all 1s;
+  transform: translate(16vw);
+}
+/* line 24, ../compass/sass/views/_home.scss */
+.App .MainMenu a {
+  text-decoration: none;
+  color: inherit;
+}
+/* line 27, ../compass/sass/views/_home.scss */
+.App .MainMenu a:hover {
+  font-weight: bold;
+}
+/* line 31, ../compass/sass/views/_home.scss */
+.App .MainMenu .nav {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  line-height: 1em;
+  color: #323232;
+}
+/* line 36, ../compass/sass/views/_home.scss */
+.App .MainMenu .nav ul li {
+  list-style: none;
+  line-height: 4em;
+  font-size: 20px;
+}
+/* line 44, ../compass/sass/views/_home.scss */
+.App .MainRoutes {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  line-height: 1em;
+  color: #1BA4BA;
+}

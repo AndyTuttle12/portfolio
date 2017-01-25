@@ -1,0 +1,56 @@
+// -------------------------------
+// _HOME.SCSS
+// Home View Styling
+// -------------------------------
+
+.App{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	color: $text;
+	background-color: $blank;
+	font-family: $textFonts;
+	transition: all 2s;
+	.MainMenu{
+		margin-left:-16vw;
+		width: 20vw;
+		height: 100vh;
+		background-color: $primary;
+		@include heading();
+		&:hover{
+			@include menuShow();
+		}
+		@include menuBack();
+		a{
+			text-decoration: none;
+			color: inherit;
+			&:hover{
+				font-weight: bold;
+			}
+		}
+		.nav{
+			width: 50%;
+			margin: auto;
+			@include text();
+			ul{
+				li{
+					list-style: none;
+					line-height: 4em;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	.MainRoutes{
+		width: 100vw;
+		height: 100vh;
+		@include heading();
+	}
+}
+
+
+
+
+
+
+

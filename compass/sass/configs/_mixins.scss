@@ -1,0 +1,25 @@
+// -------------------------------
+// _MIXINS.SCSS
+// SASS Mixins
+// -------------------------------
+@mixin heading(){
+	text-align: center;
+	line-height: 1em;
+	color: $accent;
+}
+
+@mixin text(){
+	text-align: left;
+	line-height: 1em;
+	color: $text;
+}
+
+@mixin menuShow(){
+	transition: all 1s;
+	transform: translate(16vw);
+}
+
+@mixin menuBack(){
+	transition: all 1s;
+	transform: translate(0vw);
+}
