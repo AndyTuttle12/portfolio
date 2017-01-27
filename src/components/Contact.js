@@ -8,7 +8,7 @@ class Contact extends Component {
 				<div className="title">
 					<h1>Say Hello!</h1>
 				</div>
-				<div className="centered feature">
+				<div className="feature">
 					<h2>I can meet for coffee!</h2>
 					<form>
 						<input className="textbox" type="text" placeholder="Your Name"/><br/>

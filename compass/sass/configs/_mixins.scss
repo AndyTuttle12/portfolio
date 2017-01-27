@@ -14,12 +14,48 @@
 	color: $text;
 }
 
-@mixin menuShow(){
+@mixin menuShowMobile(){
+	transition: all 1s;
+	transform: translate(45vw);
+}
+
+@mixin menuBackMobile(){
+	transition: all 1s;
+	transform: translate(0vw);
+}
+
+@mixin menuShowTablet(){
+	transition: all 1s;
+	transform: translate(35vw);
+}
+
+@mixin menuBackTablet(){
+	transition: all 1s;
+	transform: translate(0vw);
+}
+
+@mixin menuShowDesktop(){
 	transition: all 1s;
 	transform: translate(18vw);
 }
 
-@mixin menuBack(){
+@mixin menuBackDesktop(){
 	transition: all 1s;
-	transform: translate(0vw);
+	transform: translate(30px);
+}
+
+@mixin rotateArrow(){
+	transition: all 1s;
+	transform: rotate(180deg);
+	transform-origin: 50% 25%;
+}
+
+@mixin showCard(){
+	transition: all 1s;
+	transform: translateY(-91%);
+}
+
+@mixin hideCard(){
+	transition: all 1s;
+	transform: translateY(0%);
 }

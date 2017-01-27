@@ -3,37 +3,39 @@
 // Home View Styling
 // -------------------------------
 
+
 .App{
 	h1{
 		font-size: 50px;
 		line-height: 1.5em;
-		font-weight: 700;
+		font-weight: 400;
 	}
 	h2{
 		font-size: 40px;
 		line-height: 1.5em;
-		font-weight: 700;
+		font-weight: 400;
 	}
 	h3{
 		font-size: 30px;
 		line-height: 1.5em;
-		font-weight: 700;
+		font-weight: 400;
 	}
 	h4{
 		font-size: 20px;
 		line-height: 1.5em;
-		font-weight: 700;
+		font-weight: 400;
 	}
 	p{
 		font-size: 20px;
 		color: $text;
+		font-weight: 200;
 	}
 	a{
 		text-decoration: none;
 		color: inherit;
 		cursor: pointer;
 		&:hover, &:active{
-			font-weight: bold;
+			font-weight: 400;
 		}
 	}
 	width: 100vw;
@@ -49,34 +51,45 @@
 
 	.MainMenu{
 		position: fixed;
+		z-index: 2;
 		left: 0;
 		top: 0;
-		margin-left:-18vw;
-		width: 20vw;
+		padding:10px;
+		// margin-left:-18vw;
+		// width: 20vw;
+		// max-width: 300px;
 		height: 100vh;
 		background-color: $primary;
 		@include heading();
-		&:hover{
-			@include menuShow();
-		}
-		@include menuBack();
+		// &:hover{
+		// 	@include menuShowDesktop();
+		// }
+		// @include menuBackDesktop();
 		a{
 			text-decoration: none;
 			color: inherit;
 			&:hover, &:active, &:visited{
-				font-weight: bold;
+				font-weight: 400;
 			}
 		}
 		.nav{
-			width: 50%;
+			// width: 50%;
 			margin: auto;
 			@include text();
 			ul{
 				li{
 					list-style: none;
-					line-height: 4em;
+					// line-height: 4em;
 					font-size: 20px;
 				}
+			}
+		}
+		.burger{
+			position: absolute;
+			top: 48%;
+			// right: 4px;
+			img{
+				height: 25px;
 			}
 		}
 	}
@@ -86,12 +99,13 @@
 		@include heading();
 		display: flex;
 		flex-direction: column;
-		.title{
-			margin: 20px auto;
-		}
+		// .title{
+		// 	margin: 20px auto;
+		// }
 		.centered{
 			display: block;
 			margin: auto;
+			padding:10px;
 			text-align: center;
 			align-self: center;
 			.hero, .sub-title{
@@ -103,7 +117,7 @@
 			flex-direction: column;
 			img{
 				height: 20%;
-				width:20%;
+				// width:20%;
 			}
 		}
 	}
@@ -115,7 +129,7 @@
 		margin: auto;
 		align-self: center;
 		text-align: center;
-		align-items: center;
+		align-items: flex-start;
 		.currentSkills, .futureSkills{
 			margin: 5px;
 			background-color: $primary;
@@ -129,18 +143,47 @@
 		}
 	}
 	.feature{
-		width: 50%;
-		height: auto;
-		margin: auto;
+		// width: 50%;
+		height: 600px;
+		// margin: auto;
 		align-self: center;
 		text-align: center;
 		align-items: center;
 		background-color: $primary;
+		padding:10px;
+		overflow: hidden;
 		img{
-			height: 50%;
+			height: 80%;
 			max-height: 500px;
-			margin-bottom: 20px;
+			margin-bottom: 30px;
 		}
+
+		.overlay{
+			box-sizing: border-box;
+			position:relative;
+			z-index: 1;
+			margin-top: -90px;
+			padding: 30px 20%;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255,255,255,.9);
+			font-weight: 400;
+			&:hover{
+			  	@include showCard();
+		  	}
+		  	@include hideCard();
+			.arrow{
+				margin: -10px auto 0;
+			  	width: 0; 
+			  	height: 0; 
+			  	border-bottom: 10px solid $text;
+			  	border-left: 10px solid transparent;
+			  	border-right: 10px solid transparent;
+			  	border-top: 10px solid transparent;
+			  	transition: all 1s;
+			}
+		}
+
 		form{
 			width:80%;
 			height: 100%;
@@ -188,7 +231,7 @@
 				background-color:rgba(0,0,0,.1);
 				border: 1px solid $accent;
 				color: $text;
-				font-weight: bold;
+				font-weight: 400;
 				&:hover, &:active{
 					background-color:$accent;
 				}
@@ -242,7 +285,155 @@
 	to {margin-top: -100vh;}
 }
 
+@media only screen and (max-width: 599px) {
+	.App {
+	}
+	.MainMenu{
+		width: 50vw;
+		margin-left: -45vw;
+		&:hover{
+			@include menuShowMobile();
+		}
+		@include menuBackMobile();
+		.nav{
+			width:80%;
+			ul{
+				li{
+					line-height: 2em;
+				}
+			}
+		}	
+		.burger{
+			right: 4px;
+		}
+	}
+	.MainRoutes{
+		.title{
+			margin: 0px 10px 0 50px;
+		}
+		.bio{
+			padding:0px 30px 10px 50px;
+			img{
+				width:90%;
+			}
+		}
+		.skills{
+			width: 90vw;
+			height: auto;
+			margin-left: 10vw;
+			flex-wrap: wrap;
+			.currentSkills, .futureSkills{
+				margin: 2px auto;
+			}
+		}
+	}
+	.feature{
+		width: 90vw;
+		margin: 0 0 0 10vw ;
+		img{
+			width:100%;
+		}
+	}
+}
 
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+	.App {
+	}
+	.MainMenu{
+		margin-left:-35vw;
+		width: 40vw;
+		max-width: 300px;
+		&:hover{
+			@include menuShowTablet();
+		}
+		@include menuBackTablet();
+		.nav{
+			width: 50%;
+			ul{
+				li{
+					line-height: 4em;
+				}
+			}
+		}
+		.burger{
+			right:10px;
+		}
+	}
+	.MainRoutes{
+		.title{
+			margin: 20px auto;
+		}
+		.bio{
+			padding:0px 60px 10px 80px;
+			img{
+				width:40%;
+			}
+		}
+		.skills{
+			width: 80%;
+			height: 80%;
+			margin: 0 10% 0 18%;
+			.currentSkills, .futureSkills{
+				margin: 5px;
+			}
+		}
+	}
+	.feature{
+		width: 70%;
+		margin: auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.App {
+	}
+	.MainMenu{
+		margin-left:-18vw;
+		width: 20vw;
+		max-width: 300px;
+		&:hover{
+			@include menuShowDesktop();
+		}
+		@include menuBackDesktop();
+		.nav{
+			width: 50%;
+			ul{
+				li{
+					line-height: 4em;
+				}
+			}
+		}
+		.burger{
+			right:10px;
+		}
+	}
+	.MainRoutes{
+		.title{
+			margin: 20px auto;
+		}
+		.bio{
+			img{
+				width:20%;
+			}
+		}
+		.skills{
+			width: 80%;
+			height: 80%;
+			margin: auto;
+			.currentSkills, .futureSkills{
+				margin: 5px;
+			}
+		}
+	}
+	.feature{
+		width: 50%;
+		height: 600px;
+		margin: auto;
+		img{
+			margin-bottom:40px;
+		}
+	}
+}
 
 
 

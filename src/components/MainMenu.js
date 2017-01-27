@@ -8,7 +8,8 @@ class MainMenu extends Component {
 	render() {
 		return (
 			<div className="MainMenu">
-				<Link to="/"><h1>Andy Tuttle</h1></Link>
+				<div className="burger"><img src={require('../burger.png')} alt="menu"/></div>
+				<Link to="/"><h2>Andy Tuttle</h2></Link>
 				<div className="nav">
 					<ul>
 						<Link to="/about"><li>About</li></Link>
