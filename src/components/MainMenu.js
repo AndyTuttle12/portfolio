@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import github from '../../devicon-master/icons/github/github-original.svg';
+import linkedin from '../../linkedin.svg';
 import '../styles.css';
 
 class MainMenu extends Component {
@@ -14,6 +16,10 @@ class MainMenu extends Component {
 						<Link to="/Resume"><li>Resume</li></Link>
 						<Link to="/Contact"><li>Contact</li></Link>
 					</ul>
+				</div>
+				<div className="social-links">
+					<a href="https://www.linkedin.com/in/andy-tuttle" target="_blank"><img src={linkedin} alt="linkedin"/></a>
+					<a href="https://github.com/AndyTuttle12" target="_blank"><img src={github} alt="github"/></a>
 				</div>
 			</div>
 		)

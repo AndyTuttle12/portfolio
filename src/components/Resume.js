@@ -5,7 +5,12 @@ class Resume extends Component {
 	render() {
 		return (
 			<div className="Resume MainRoutes" >
-				<h1>Professional documents</h1>
+				<div className="title">
+					<h1>Professional documents</h1>
+				</div>
+				<div className="centered feature">
+					Resume Goes here.
+				</div>
 			</div>
 		)
 	}
