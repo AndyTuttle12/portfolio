@@ -28,6 +28,7 @@
 	p{
 		font-size: 20px;
 		color: $text;
+		line-height: 1.2em;
 		font-weight: 200;
 	}
 	a{
@@ -162,6 +163,8 @@
 			box-sizing: border-box;
 			position:relative;
 			z-index: 1;
+			overflow-y: scroll;
+			-webkit-scrollbar: hidden;
 			margin-top: -90px;
 			padding: 30px 20%;
 			width: 100%;

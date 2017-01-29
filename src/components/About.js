@@ -28,7 +28,7 @@ class About extends Component {
 				</div>
 				<div className="bio">
 					<p>I am a front-end developer who speciallizes in clean, responsive, modular apps and websites.</p>
-					<p>Currently, I am studying at Digital<strong>Crafts</strong>, a Full-Stack development bootcamp in Atlanta, GA.</p>
+					<p>Currently, I am studying at DigitalCrafts, a full-stack development bootcamp in Atlanta, GA.</p>
 					<p>Learn more about the bootcamp below:</p>
 					<div><a href="http://www.digitalcrafts.com/"><img src="http://www.digitalcrafts.com/sites/all/themes/digitalcrafts/images/digitalcrafts-site-logo.png" alt="DigitalCrafts" /></a></div>
 				</div>
