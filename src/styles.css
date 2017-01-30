@@ -137,16 +137,16 @@
 }
 /* line 134, ../compass/sass/views/_home.scss */
 .App .skills .currentSkills, .App .skills .futureSkills {
-  margin: 5px;
+  margin: 1px;
   background-color: #ddd;
   flex-wrap: wrap;
 }
 /* line 139, ../compass/sass/views/_home.scss */
 .App .skills .skills-logo {
-  width: 20%;
+  width: 100%;
   max-height: 100px;
-  max-width: 100px;
-  margin: 10px;
+  max-width: 140px;
+  margin: 2px;
 }
 /* line 146, ../compass/sass/views/_home.scss */
 .App .feature {
@@ -319,15 +319,15 @@
 @media only screen and (max-width: 599px) {
   /* line 294, ../compass/sass/views/_home.scss */
   .MainMenu {
-    width: 50vw;
-    margin-left: -45vw;
+    width: 170px;
+    margin-left: -150px;
     transition: all 1s;
-    transform: translate(0vw);
+    transform: translate(0px);
   }
   /* line 297, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
-    transform: translate(45vw);
+    transform: translate(150px);
   }
   /* line 301, ../compass/sass/views/_home.scss */
   .MainMenu .nav {
@@ -379,16 +379,16 @@
 @media only screen and (min-width: 500px) and (max-width: 999px) {
   /* line 345, ../compass/sass/views/_home.scss */
   .MainMenu {
-    margin-left: -35vw;
-    width: 40vw;
-    max-width: 300px;
+    margin-left: -300px;
+    width: 350px;
+    max-width: 330px;
     transition: all 1s;
-    transform: translate(0vw);
+    transform: translate(0px);
   }
   /* line 349, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
-    transform: translate(35vw);
+    transform: translate(300px);
   }
   /* line 353, ../compass/sass/views/_home.scss */
   .MainMenu .nav {
@@ -435,8 +435,8 @@
 @media only screen and (min-width: 1000px) {
   /* line 393, ../compass/sass/views/_home.scss */
   .MainMenu {
-    margin-left: -18vw;
-    width: 20vw;
+    margin-left: -300px;
+    width: 300px;
     max-width: 300px;
     transition: all 1s;
     transform: translate(30px);
@@ -444,7 +444,7 @@
   /* line 397, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
-    transform: translate(18vw);
+    transform: translate(300px);
   }
   /* line 401, ../compass/sass/views/_home.scss */
   .MainMenu .nav {

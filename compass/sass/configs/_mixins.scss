@@ -16,27 +16,27 @@
 
 @mixin menuShowMobile(){
 	transition: all 1s;
-	transform: translate(45vw);
+	transform: translate(150px);
 }
 
 @mixin menuBackMobile(){
 	transition: all 1s;
-	transform: translate(0vw);
+	transform: translate(0px);
 }
 
 @mixin menuShowTablet(){
 	transition: all 1s;
-	transform: translate(35vw);
+	transform: translate(300px);
 }
 
 @mixin menuBackTablet(){
 	transition: all 1s;
-	transform: translate(0vw);
+	transform: translate(0px);
 }
 
 @mixin menuShowDesktop(){
 	transition: all 1s;
-	transform: translate(18vw);
+	transform: translate(300px);
 }
 
 @mixin menuBackDesktop(){
