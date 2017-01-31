@@ -9,13 +9,13 @@ html{
 
 .App{
 	h1{
-		font-size: 50px;
-		line-height: 1.5em;
+		font-size: 45px;
+		line-height: 1.2em;
 		font-weight: 400;
 	}
 	h2{
 		font-size: 40px;
-		line-height: 1.5em;
+		line-height: 1.2em;
 		font-weight: 400;
 	}
 	h3{
@@ -55,7 +55,7 @@ html{
 
 	.MainMenu{
 		position: fixed;
-		z-index: 2;
+		z-index: 99;
 		left: 0;
 		top: 0;
 		padding:10px;
@@ -123,9 +123,10 @@ html{
 		// 	margin: 20px auto;
 		// }
 		.centered{
+			animation: scaleUp 1.5s ease-out;
 			display: block;
-			z-index: 1;
-			margin: auto;
+			z-index: 50;
+			// margin: auto;
 			padding:30px;
 			text-align: center;
 			align-self: center;
@@ -144,6 +145,7 @@ html{
 		}
 	}
 	.skills{
+		animation: fadein 1.5s ease-out;
 		display: flex;
 		flex-direction: row;
 		width: 80%;
@@ -171,6 +173,7 @@ html{
 		}
 	}
 	.feature{
+		animation: fadein 1.5s ease-out;
 		// width: 50%;
 		height: 600px;
 		// margin: auto;
@@ -189,7 +192,7 @@ html{
 		.overlay{
 			box-sizing: border-box;
 			position:relative;
-			z-index: 1;
+			z-index: 50;
 			overflow-y: scroll;
 			-webkit-scrollbar: hidden;
 			margin-top: -90px;
@@ -313,6 +316,21 @@ html{
 		left: 0;
 		width: 100vw;
 		height: 100%;
+		.l1{
+			z-index:5;
+		}
+		.l2{
+			z-index:4;
+		}
+		.l3{
+			z-index:3;
+		}
+		.l4{
+			z-index:2;
+		}
+		.l5{
+			z-index:1;
+		}
 		img{
 			position: absolute;
 			z-index: 0;
@@ -323,20 +341,28 @@ html{
 		}
 	}
 
-	.funnyHead{
-		animation: riseUp 32s ease-out;
+	.funnyHead, .funnyHead img{
+		animation: riseUp 2s ease-out;
 		position: fixed;
-		left: -300px;
-		bottom: 300px;
-		height: 100px;
+		left: 0px;
+		bottom: -20px;
 	}
 
 }
 
+@keyframes scaleUp{
+	from{opacity:0; transform: scale(0);}
+	to{opacity:inherit; transform: scale(1);}
+}
+
+@keyframes fadein{
+	from{opacity:0;}
+	to{opacity:inherit;}
+}
+
 @keyframes riseUp{
 	0%{bottom: -300px;}
-	90%{bottom: -300px;}
-	100%{bottom: 300px;}
+	100%{bottom: -10px;}
 }
 
 @keyframes slide-in{
@@ -372,8 +398,15 @@ html{
 		}
 	}
 	.MainRoutes{
+		.centered{
+			margin: auto;
+			margin-left:40px;
+		}
 		.title{
 			margin: 0px 10px 0 50px;
+		}
+		.title.projects{
+			font-size: 40px;
 		}
 		.bio{
 			padding:0px 30px 10px 50px;
@@ -397,6 +430,24 @@ html{
 		img{
 			width:100%;
 		}
+	}
+	.feature.contact-form{
+		overflow-y: scroll;
+	}
+	.feature.projects{
+		padding:0px;
+		h2{
+			margin-bottom:0px;
+		}
+	}
+	.funnyHead img{
+		animation: riseUp 32s ease-out;
+		position: fixed;
+		z-index: 100;
+		left: 0px;
+		bottom:-10px;
+		width: 100%;
+		max-width: 120px;
 	}
 }
 
@@ -424,6 +475,9 @@ html{
 		}
 	}
 	.MainRoutes{
+		.centered{
+			margin: auto;
+		}
 		.title{
 			margin: 20px auto;
 		}
@@ -445,6 +499,15 @@ html{
 	.feature{
 		width: 70%;
 		margin: auto;
+	}
+	.funnyHead img{
+		animation: riseUp 32s ease-out;
+		position: fixed;
+		z-index: 100;
+		left: 0px;
+		bottom: -10px;
+		width: 100%;
+		max-width: 300px;
 	}
 }
 
@@ -472,6 +535,9 @@ html{
 		}
 	}
 	.MainRoutes{
+		.centered{
+			margin: auto;
+		}
 		.title{
 			margin: 20px auto;
 		}
@@ -496,6 +562,15 @@ html{
 		img{
 			margin-bottom:40px;
 		}
+	}
+	.funnyHead img{
+		animation: riseUp 32s ease-out;
+		position: fixed;
+		z-index: 100;
+		left: 0px;
+		bottom: -10px;
+		width: 100%;
+		max-width: 400px;
 	}
 }
 

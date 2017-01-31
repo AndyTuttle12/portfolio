@@ -6,9 +6,9 @@ class Resume extends Component {
 		return (
 			<div className="Resume MainRoutes" >
 				<div className="title">
-					<h1>Professional documents</h1>
+					<h1>My resume</h1>
 				</div>
-				<div className="centered feature">
+				<div className="feature">
 					<p>Take a look at my resume!</p>
 					<a href={require("../../test-document-pdf.pdf")} target="_blank">Download Resume.pdf</a>
 				</div>

@@ -8,8 +8,8 @@ class Contact extends Component {
 				<div className="title">
 					<h1>Say Hello!</h1>
 				</div>
-				<div className="feature">
-					<h2>I can meet for coffee!</h2>
+				<div className="feature contact-form">
+					<h2>Let&#39;s meet for coffee!</h2>
 					<form>
 						<input className="textbox" type="text" placeholder="Your Name"/><br/>
 						<input className="textbox" type="email" placeholder="Email" /><br/>

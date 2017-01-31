@@ -16,14 +16,14 @@ html {
 }
 /* line 11, ../compass/sass/views/_home.scss */
 .App h1 {
-  font-size: 50px;
-  line-height: 1.5em;
+  font-size: 45px;
+  line-height: 1.2em;
   font-weight: 400;
 }
 /* line 16, ../compass/sass/views/_home.scss */
 .App h2 {
   font-size: 40px;
-  line-height: 1.5em;
+  line-height: 1.2em;
   font-weight: 400;
 }
 /* line 21, ../compass/sass/views/_home.scss */
@@ -58,7 +58,7 @@ html {
 /* line 56, ../compass/sass/views/_home.scss */
 .App .MainMenu {
   position: fixed;
-  z-index: 2;
+  z-index: 99;
   left: 0;
   top: 0;
   padding: 10px;
@@ -132,29 +132,30 @@ html {
 }
 /* line 125, ../compass/sass/views/_home.scss */
 .App .MainRoutes .centered {
+  animation: scaleUp 1.5s ease-out;
   display: block;
-  z-index: 1;
-  margin: auto;
+  z-index: 50;
   padding: 30px;
   text-align: center;
   align-self: center;
   background-color: rgba(255, 255, 255, 0.6);
 }
-/* line 133, ../compass/sass/views/_home.scss */
+/* line 134, ../compass/sass/views/_home.scss */
 .App .MainRoutes .centered .hero, .App .MainRoutes .centered .sub-title {
   height: 100%;
   margin: 10px auto;
 }
-/* line 138, ../compass/sass/views/_home.scss */
+/* line 139, ../compass/sass/views/_home.scss */
 .App .MainRoutes .bio {
   flex-direction: column;
 }
-/* line 140, ../compass/sass/views/_home.scss */
+/* line 141, ../compass/sass/views/_home.scss */
 .App .MainRoutes .bio img {
   height: 20%;
 }
-/* line 146, ../compass/sass/views/_home.scss */
+/* line 147, ../compass/sass/views/_home.scss */
 .App .skills {
+  animation: fadein 1.5s ease-out;
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -164,13 +165,13 @@ html {
   text-align: center;
   align-items: flex-start;
 }
-/* line 155, ../compass/sass/views/_home.scss */
+/* line 157, ../compass/sass/views/_home.scss */
 .App .skills .currentSkills, .App .skills .futureSkills {
   margin: 1px;
   background-color: #ddd;
   flex-wrap: wrap;
 }
-/* line 160, ../compass/sass/views/_home.scss */
+/* line 162, ../compass/sass/views/_home.scss */
 .App .skills .skills-logo {
   width: 100%;
   max-height: 100px;
@@ -179,13 +180,14 @@ html {
   filter: grayscale(80%);
   transition: all .5s;
 }
-/* line 167, ../compass/sass/views/_home.scss */
+/* line 169, ../compass/sass/views/_home.scss */
 .App .skills .skills-logo:hover {
   filter: grayscale(0%);
   transform: scale(1.2);
 }
-/* line 173, ../compass/sass/views/_home.scss */
+/* line 175, ../compass/sass/views/_home.scss */
 .App .feature {
+  animation: fadein 1.5s ease-out;
   height: 600px;
   align-self: center;
   text-align: center;
@@ -194,17 +196,17 @@ html {
   padding: 10px;
   overflow: hidden;
 }
-/* line 183, ../compass/sass/views/_home.scss */
+/* line 186, ../compass/sass/views/_home.scss */
 .App .feature img {
   height: 80%;
   max-height: 500px;
   margin-bottom: 30px;
 }
-/* line 189, ../compass/sass/views/_home.scss */
+/* line 192, ../compass/sass/views/_home.scss */
 .App .feature .overlay {
   box-sizing: border-box;
   position: relative;
-  z-index: 1;
+  z-index: 50;
   overflow-y: scroll;
   -webkit-scrollbar: hidden;
   margin-top: -90px;
@@ -216,12 +218,12 @@ html {
   transition: all 1s;
   transform: translateY(0%);
 }
-/* line 201, ../compass/sass/views/_home.scss */
+/* line 204, ../compass/sass/views/_home.scss */
 .App .feature .overlay:hover {
   transition: all 1s;
   transform: translateY(-91%);
 }
-/* line 205, ../compass/sass/views/_home.scss */
+/* line 208, ../compass/sass/views/_home.scss */
 .App .feature .overlay .arrow {
   margin: -10px auto 0;
   width: 0;
@@ -232,7 +234,7 @@ html {
   border-top: 10px solid transparent;
   transition: all 1s;
 }
-/* line 217, ../compass/sass/views/_home.scss */
+/* line 220, ../compass/sass/views/_home.scss */
 .App .feature form {
   width: 80%;
   height: 100%;
@@ -240,7 +242,7 @@ html {
   font-size: 20px;
   overflow-y: scroll;
 }
-/* line 223, ../compass/sass/views/_home.scss */
+/* line 226, ../compass/sass/views/_home.scss */
 .App .feature form .textbox {
   width: 100%;
   height: 40px;
@@ -253,12 +255,12 @@ html {
   border-right: 0px;
   border-bottom: 1px solid #1BA4BA;
 }
-/* line 234, ../compass/sass/views/_home.scss */
+/* line 237, ../compass/sass/views/_home.scss */
 .App .feature form .textbox:focus {
   outline: none;
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 239, ../compass/sass/views/_home.scss */
+/* line 242, ../compass/sass/views/_home.scss */
 .App .feature form .textarea {
   width: 100%;
   height: 120px;
@@ -272,12 +274,12 @@ html {
   border-bottom: 1px solid #1BA4BA;
   resize: none;
 }
-/* line 251, ../compass/sass/views/_home.scss */
+/* line 254, ../compass/sass/views/_home.scss */
 .App .feature form .textarea:focus {
   outline: none;
   background-color: rgba(255, 255, 255, 0.2);
 }
-/* line 256, ../compass/sass/views/_home.scss */
+/* line 259, ../compass/sass/views/_home.scss */
 .App .feature form .input-btn, .App .feature form input[type=submit] {
   width: 40%;
   height: 40px;
@@ -289,19 +291,19 @@ html {
   color: #323232;
   font-weight: 400;
 }
-/* line 266, ../compass/sass/views/_home.scss */
+/* line 269, ../compass/sass/views/_home.scss */
 .App .feature form .input-btn:hover, .App .feature form .input-btn:active, .App .feature form input[type=submit]:hover, .App .feature form input[type=submit]:active {
   background-color: #1BA4BA;
 }
-/* line 269, ../compass/sass/views/_home.scss */
+/* line 272, ../compass/sass/views/_home.scss */
 .App .feature form .input-btn:focus, .App .feature form input[type=submit]:focus {
   outline: none;
 }
-/* line 275, ../compass/sass/views/_home.scss */
+/* line 278, ../compass/sass/views/_home.scss */
 .App .social-links {
   display: inline;
 }
-/* line 277, ../compass/sass/views/_home.scss */
+/* line 280, ../compass/sass/views/_home.scss */
 .App .social-links a img {
   height: 50%;
   max-height: 60px;
@@ -309,37 +311,37 @@ html {
   filter: grayscale(80%);
   transition: all .5s;
 }
-/* line 283, ../compass/sass/views/_home.scss */
+/* line 286, ../compass/sass/views/_home.scss */
 .App .social-links a img:hover {
   filter: grayscale(0%);
   transform: scale(1.2);
 }
-/* line 289, ../compass/sass/views/_home.scss */
+/* line 292, ../compass/sass/views/_home.scss */
 .App .slide-enter {
   margin-bottom: 100vh;
 }
-/* line 291, ../compass/sass/views/_home.scss */
+/* line 294, ../compass/sass/views/_home.scss */
 .App .slide-enter .slide-enter-active {
   transition: slide-in 800ms ease-in;
 }
-/* line 295, ../compass/sass/views/_home.scss */
+/* line 298, ../compass/sass/views/_home.scss */
 .App .slide-leave {
   margin-top: 0vh;
 }
-/* line 297, ../compass/sass/views/_home.scss */
+/* line 300, ../compass/sass/views/_home.scss */
 .App .slide-leave .slide-leave-active {
   transition: slide-out 1200ms ease-in;
 }
-/* line 301, ../compass/sass/views/_home.scss */
+/* line 304, ../compass/sass/views/_home.scss */
 .App .slide-appear {
   opacity: 0.01;
 }
-/* line 303, ../compass/sass/views/_home.scss */
+/* line 306, ../compass/sass/views/_home.scss */
 .App .slide-appear .slide-appear-active {
   opacity: 1;
   transition: opacity .2s ease-in;
 }
-/* line 309, ../compass/sass/views/_home.scss */
+/* line 312, ../compass/sass/views/_home.scss */
 .App .parallax-bg {
   position: absolute;
   z-index: 0;
@@ -348,7 +350,27 @@ html {
   width: 100vw;
   height: 100%;
 }
-/* line 316, ../compass/sass/views/_home.scss */
+/* line 319, ../compass/sass/views/_home.scss */
+.App .parallax-bg .l1 {
+  z-index: 5;
+}
+/* line 322, ../compass/sass/views/_home.scss */
+.App .parallax-bg .l2 {
+  z-index: 4;
+}
+/* line 325, ../compass/sass/views/_home.scss */
+.App .parallax-bg .l3 {
+  z-index: 3;
+}
+/* line 328, ../compass/sass/views/_home.scss */
+.App .parallax-bg .l4 {
+  z-index: 2;
+}
+/* line 331, ../compass/sass/views/_home.scss */
+.App .parallax-bg .l5 {
+  z-index: 1;
+}
+/* line 334, ../compass/sass/views/_home.scss */
 .App .parallax-bg img {
   position: absolute;
   z-index: 0;
@@ -357,24 +379,38 @@ html {
   width: 100vw;
   height: 100%;
 }
-/* line 326, ../compass/sass/views/_home.scss */
-.App .funnyHead {
-  animation: riseUp 32s ease-out;
+/* line 344, ../compass/sass/views/_home.scss */
+.App .funnyHead, .App .funnyHead img {
+  animation: riseUp 2s ease-out;
   position: fixed;
-  left: -300px;
-  bottom: 300px;
-  height: 100px;
+  left: 0px;
+  bottom: -20px;
 }
 
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: inherit;
+    transform: scale(1);
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: inherit;
+  }
+}
 @keyframes riseUp {
   0% {
     bottom: -300px;
   }
-  90% {
-    bottom: -300px;
-  }
   100% {
-    bottom: 300px;
+    bottom: -10px;
   }
 }
 @keyframes slide-in {
@@ -394,67 +430,101 @@ html {
   }
 }
 @media only screen and (max-width: 499px) {
-  /* line 355, ../compass/sass/views/_home.scss */
+  /* line 381, ../compass/sass/views/_home.scss */
   .MainMenu {
     width: 170px;
     margin-left: -150px;
     transition: all 1s;
     transform: translate(0px);
   }
-  /* line 358, ../compass/sass/views/_home.scss */
+  /* line 384, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
     transform: translate(150px);
   }
-  /* line 362, ../compass/sass/views/_home.scss */
+  /* line 388, ../compass/sass/views/_home.scss */
   .MainMenu .nav {
     width: 80%;
   }
-  /* line 365, ../compass/sass/views/_home.scss */
+  /* line 391, ../compass/sass/views/_home.scss */
   .MainMenu .nav ul li {
     line-height: 2em;
   }
-  /* line 370, ../compass/sass/views/_home.scss */
+  /* line 396, ../compass/sass/views/_home.scss */
   .MainMenu .burger {
     right: 4px;
   }
 
-  /* line 375, ../compass/sass/views/_home.scss */
+  /* line 401, ../compass/sass/views/_home.scss */
+  .MainRoutes .centered {
+    margin: auto;
+    margin-left: 40px;
+  }
+  /* line 405, ../compass/sass/views/_home.scss */
   .MainRoutes .title {
     margin: 0px 10px 0 50px;
   }
-  /* line 378, ../compass/sass/views/_home.scss */
+  /* line 408, ../compass/sass/views/_home.scss */
+  .MainRoutes .title.projects {
+    font-size: 40px;
+  }
+  /* line 411, ../compass/sass/views/_home.scss */
   .MainRoutes .bio {
     padding: 0px 30px 10px 50px;
   }
-  /* line 380, ../compass/sass/views/_home.scss */
+  /* line 413, ../compass/sass/views/_home.scss */
   .MainRoutes .bio img {
     width: 90%;
   }
-  /* line 384, ../compass/sass/views/_home.scss */
+  /* line 417, ../compass/sass/views/_home.scss */
   .MainRoutes .skills {
     width: 90vw;
     height: auto;
     margin-left: 10vw;
     flex-wrap: wrap;
   }
-  /* line 389, ../compass/sass/views/_home.scss */
+  /* line 422, ../compass/sass/views/_home.scss */
   .MainRoutes .skills .currentSkills, .MainRoutes .skills .futureSkills {
     margin: 2px auto;
   }
 
-  /* line 394, ../compass/sass/views/_home.scss */
+  /* line 427, ../compass/sass/views/_home.scss */
   .feature {
     width: 90vw;
     margin: 0 0 0 10vw;
   }
-  /* line 397, ../compass/sass/views/_home.scss */
+  /* line 430, ../compass/sass/views/_home.scss */
   .feature img {
     width: 100%;
   }
+
+  /* line 434, ../compass/sass/views/_home.scss */
+  .feature.contact-form {
+    overflow-y: scroll;
+  }
+
+  /* line 437, ../compass/sass/views/_home.scss */
+  .feature.projects {
+    padding: 0px;
+  }
+  /* line 439, ../compass/sass/views/_home.scss */
+  .feature.projects h2 {
+    margin-bottom: 0px;
+  }
+
+  /* line 443, ../compass/sass/views/_home.scss */
+  .funnyHead img {
+    animation: riseUp 32s ease-out;
+    position: fixed;
+    z-index: 100;
+    left: 0px;
+    bottom: -10px;
+    width: 100%;
+    max-width: 120px;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 999px) {
-  /* line 406, ../compass/sass/views/_home.scss */
+  /* line 457, ../compass/sass/views/_home.scss */
   .MainMenu {
     margin-left: -300px;
     width: 350px;
@@ -462,55 +532,70 @@ html {
     transition: all 1s;
     transform: translate(0px);
   }
-  /* line 410, ../compass/sass/views/_home.scss */
+  /* line 461, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
     transform: translate(300px);
   }
-  /* line 414, ../compass/sass/views/_home.scss */
+  /* line 465, ../compass/sass/views/_home.scss */
   .MainMenu .nav {
     width: 50%;
   }
-  /* line 417, ../compass/sass/views/_home.scss */
+  /* line 468, ../compass/sass/views/_home.scss */
   .MainMenu .nav ul li {
     line-height: 4em;
   }
-  /* line 422, ../compass/sass/views/_home.scss */
+  /* line 473, ../compass/sass/views/_home.scss */
   .MainMenu .burger {
     right: 10px;
   }
 
-  /* line 427, ../compass/sass/views/_home.scss */
+  /* line 478, ../compass/sass/views/_home.scss */
+  .MainRoutes .centered {
+    margin: auto;
+  }
+  /* line 481, ../compass/sass/views/_home.scss */
   .MainRoutes .title {
     margin: 20px auto;
   }
-  /* line 430, ../compass/sass/views/_home.scss */
+  /* line 484, ../compass/sass/views/_home.scss */
   .MainRoutes .bio {
     padding: 0px 60px 10px 80px;
   }
-  /* line 432, ../compass/sass/views/_home.scss */
+  /* line 486, ../compass/sass/views/_home.scss */
   .MainRoutes .bio img {
     width: 40%;
   }
-  /* line 436, ../compass/sass/views/_home.scss */
+  /* line 490, ../compass/sass/views/_home.scss */
   .MainRoutes .skills {
     width: 80%;
     height: 80%;
     margin: 0 10% 0 18%;
   }
-  /* line 440, ../compass/sass/views/_home.scss */
+  /* line 494, ../compass/sass/views/_home.scss */
   .MainRoutes .skills .currentSkills, .MainRoutes .skills .futureSkills {
     margin: 5px;
   }
 
-  /* line 445, ../compass/sass/views/_home.scss */
+  /* line 499, ../compass/sass/views/_home.scss */
   .feature {
     width: 70%;
     margin: auto;
   }
+
+  /* line 503, ../compass/sass/views/_home.scss */
+  .funnyHead img {
+    animation: riseUp 32s ease-out;
+    position: fixed;
+    z-index: 100;
+    left: 0px;
+    bottom: -10px;
+    width: 100%;
+    max-width: 300px;
+  }
 }
 @media only screen and (min-width: 1000px) {
-  /* line 454, ../compass/sass/views/_home.scss */
+  /* line 517, ../compass/sass/views/_home.scss */
   .MainMenu {
     margin-left: -300px;
     width: 300px;
@@ -518,51 +603,66 @@ html {
     transition: all 1s;
     transform: translate(30px);
   }
-  /* line 458, ../compass/sass/views/_home.scss */
+  /* line 521, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
     transform: translate(300px);
   }
-  /* line 462, ../compass/sass/views/_home.scss */
+  /* line 525, ../compass/sass/views/_home.scss */
   .MainMenu .nav {
     width: 50%;
   }
-  /* line 465, ../compass/sass/views/_home.scss */
+  /* line 528, ../compass/sass/views/_home.scss */
   .MainMenu .nav ul li {
     line-height: 4em;
   }
-  /* line 470, ../compass/sass/views/_home.scss */
+  /* line 533, ../compass/sass/views/_home.scss */
   .MainMenu .burger {
     right: 10px;
   }
 
-  /* line 475, ../compass/sass/views/_home.scss */
+  /* line 538, ../compass/sass/views/_home.scss */
+  .MainRoutes .centered {
+    margin: auto;
+  }
+  /* line 541, ../compass/sass/views/_home.scss */
   .MainRoutes .title {
     margin: 20px auto;
   }
-  /* line 479, ../compass/sass/views/_home.scss */
+  /* line 545, ../compass/sass/views/_home.scss */
   .MainRoutes .bio img {
     width: 20%;
   }
-  /* line 483, ../compass/sass/views/_home.scss */
+  /* line 549, ../compass/sass/views/_home.scss */
   .MainRoutes .skills {
     width: 80%;
     height: 80%;
     margin: auto;
   }
-  /* line 487, ../compass/sass/views/_home.scss */
+  /* line 553, ../compass/sass/views/_home.scss */
   .MainRoutes .skills .currentSkills, .MainRoutes .skills .futureSkills {
     margin: 5px;
   }
 
-  /* line 492, ../compass/sass/views/_home.scss */
+  /* line 558, ../compass/sass/views/_home.scss */
   .feature {
     width: 50%;
     height: 600px;
     margin: auto;
   }
-  /* line 496, ../compass/sass/views/_home.scss */
+  /* line 562, ../compass/sass/views/_home.scss */
   .feature img {
     margin-bottom: 40px;
+  }
+
+  /* line 566, ../compass/sass/views/_home.scss */
+  .funnyHead img {
+    animation: riseUp 32s ease-out;
+    position: fixed;
+    z-index: 100;
+    left: 0px;
+    bottom: -10px;
+    width: 100%;
+    max-width: 400px;
   }
 }

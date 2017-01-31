@@ -10,21 +10,21 @@ class MainBody extends Component {
 			<div className="MainRoutes">
 				<div className="centered">
 					<div className="hero">
-						<h1>Hi, I'm Andy.</h1>
+						<h1>Hi, I&#39;m Andy.</h1>
 					</div>
 					<div className="sub-title">
-						<h2>I'm a Web Developer.</h2>
+						<h2>I&#39;m a Web Developer.</h2>
 					</div>
 					<div className="text">
 						<h3>Please look around...</h3>
 					</div>
 				</div>
 				<div className="parallax-bg">
-						<img role="presentation" src={require('../layer1.png')}/>
-						<img role="presentation" src={require("../layer2.png")}/>
-						<img role="presentation" src={require("../layer3.png")}/>
-						<img role="presentation" src={require("../layer4.png")}/>
-						<img role="presentation" src={require("../layer5.png")}/>
+						<img className="l1" role="presentation" src={require('../layer1.png')}/>
+						<img className="l2" role="presentation" src={require("../layer2.png")}/>
+						<img className="l3" role="presentation" src={require("../layer3.png")}/>
+						<img className="l4" role="presentation" src={require("../layer4.png")}/>
+						<img className="l5" role="presentation" src={require("../layer5.png")}/>
 				</div>
 			</div>
 		)
