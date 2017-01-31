@@ -17,6 +17,9 @@ class Contact extends Component {
 						<input className="submit-btn" type="submit" value="Submit"/>
 					</form>
 				</div>
+				<div className="funnyHead">
+					<img src={require('../funny.png')} alt="me" />
+				</div>
 			</div>
 		)
 	}
