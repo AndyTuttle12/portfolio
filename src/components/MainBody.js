@@ -19,6 +19,13 @@ class MainBody extends Component {
 						<h3>Please look around...</h3>
 					</div>
 				</div>
+				<div className="parallax-bg">
+						<img role="presentation" src={require('../layer1.png')}/>
+						<img role="presentation" src={require("../layer2.png")}/>
+						<img role="presentation" src={require("../layer3.png")}/>
+						<img role="presentation" src={require("../layer4.png")}/>
+						<img role="presentation" src={require("../layer5.png")}/>
+				</div>
 			</div>
 		)
 	}

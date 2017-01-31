@@ -12,10 +12,10 @@ class MainMenu extends Component {
 				<Link to="/"><h2>Andy Tuttle</h2></Link>
 				<div className="nav">
 					<ul>
-						<Link to="/about"><li>About</li></Link>
-						<Link to="/Portfolio"><li>Portfolio</li></Link>
-						<Link to="/Resume"><li>Resume</li></Link>
-						<Link to="/Contact"><li>Contact</li></Link>
+						<Link to="/about" className="aboutLink"><li><span>About</span></li></Link>
+						<Link to="/Portfolio" className="portfolioLink"><li><span>Portfolio</span></li></Link>
+						<Link to="/Resume" className="resumeLink"><li><span>Resume</span></li></Link>
+						<Link to="/Contact" className="contactLink"><li><span>Contact</span></li></Link>
 					</ul>
 				</div>
 				<div className="social-links">
