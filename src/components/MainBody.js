@@ -35,11 +35,11 @@ class MainBody extends Component {
 				this.refs.foreground
 			];
 			foreground.style.transform = `translate3d(${0}px, ${0}px, 0)`;
-			l1.style.transform = `translate3d(${moveX * -.2}px, ${moveY * -.2}px, 0)`;
-			l2.style.transform = `translate3d(${moveX * -.5}px, ${moveY * -.5}px, 0)`;
-			l3.style.transform = `translate3d(${moveX * -.8}px, ${moveY * -.8}px, 0)`;
-			l4.style.transform = `translate3d(${moveX * -1}px, ${moveY * -1}px, 0)`;
-			l5.style.transform = `translate3d(${moveX * -.7}px, ${moveY * -.7}px, 0)`;
+			l1.style.transform = `translate3d(${moveX * 1}px, ${moveY * 1}px, 0)`;
+			l2.style.transform = `translate3d(${moveX * .8}px, ${moveY * .8}px, 0)`;
+			l3.style.transform = `translate3d(${moveX * .5}px, ${moveY * .5}px, 0)`;
+			l4.style.transform = `translate3d(${moveX * .2}px, ${moveY * .2}px, 0)`;
+			l5.style.transform = `translate3d(${moveX * 0}px, ${moveY * 0}px, 0)`;
 			section.style.transform = `translate3d(${0}px, ${0}px, 0)`;
 		}
 	}
