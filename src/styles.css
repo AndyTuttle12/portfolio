@@ -347,8 +347,8 @@ html {
   z-index: 0;
   top: -100px;
   left: -110px;
-  width: 110vw;
-  height: 110%;
+  width: 101.5vw;
+  height: 105.8vh;
 }
 /* line 319, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l1 {
@@ -375,8 +375,8 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 103%;
-  height: 103%;
+  width: 108%;
+  height: 108%;
 }
 
 @keyframes scaleUp {
