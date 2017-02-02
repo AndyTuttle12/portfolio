@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { RouteHandler } from 'react-router';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+// import { RouteHandler } from 'react-router';
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './styles.css';
 import MainMenu from './components/MainMenu';
 

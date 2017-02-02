@@ -22,7 +22,7 @@ class MainBody extends Component {
 	}
 
 	parallax(){
-		if ('ontouchstart' in window == false) {
+		if ('ontouchstart' in window === false) {
 			// console.log(this.refs.section)
 			let [moveX, moveY] = [(this.state.pos.x / -30), (this.state.pos.y / -40)];
 			let [section, l1, l2, l3, l4, l5, foreground] = [
