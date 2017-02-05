@@ -14,7 +14,7 @@ class MainMenu extends Component {
 					<ul>
 						<Link to="/about" className="aboutLink"><li><span>About</span></li></Link>
 						<Link to="/Portfolio" className="portfolioLink"><li><span>Portfolio</span></li></Link>
-						<a href={require("../test-document-pdf.pdf")} className="resumeLink" target="_blank"><li><span>Resume</span></li></a>
+						<a href={require("../WorkResume.pdf")} className="resumeLink" target="_blank"><li><span>Resume</span></li></a>
 						<Link to="/Contact" className="contactLink"><li><span>Contact</span></li></Link>
 					</ul>
 				</div>
