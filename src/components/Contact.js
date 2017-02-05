@@ -17,6 +17,7 @@ class Contact extends Component {
 						<input className="submit-btn" type="submit" value="Submit"/>
 					</form>
 				</div>
+
 			</div>
 		)
 	}
