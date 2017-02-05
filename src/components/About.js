@@ -43,18 +43,17 @@ class About extends Component {
 						<img src={jquery} className="skills-logo" alt="jquery" />
 						<img src={git} className="skills-logo" alt="git" />
 						<img src={sass} className="skills-logo" alt="sass" />
-
-					</div>
-					<div className="futureSkills">
-						<h2>What I am learning.</h2>
 						<img src={amazonwebservices} className="skills-logo" alt="amazonwebservices" />
-						<img src={angularjs} className="skills-logo" alt="angularjs" />
 						<img src={apache} className="skills-logo" alt="apache" />
 						<img src={babel} className="skills-logo" alt="babel" />
 						<img src={linux} className="skills-logo" alt="linux" />
 						<img src={mongodb} className="skills-logo" alt="mongodb" />
-						<img src={mysql} className="skills-logo" alt="mysql" />
 						<img src={nodejs} className="skills-logo" alt="nodejs" />
+					</div>
+					<div className="futureSkills">
+						<h2>What I am learning.</h2>	
+						<img src={angularjs} className="skills-logo" alt="angularjs" />				
+						<img src={mysql} className="skills-logo" alt="mysql" />
 						<img src={python} className="skills-logo" alt="python" />
 						<img src={typescript} className="skills-logo" alt="typescript" />
 					</div>

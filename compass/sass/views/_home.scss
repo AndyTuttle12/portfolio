@@ -123,17 +123,20 @@ html{
 		// 	margin: 20px auto;
 		// }
 		.centered{
+			color: $blank;
 			animation: scaleUp 1.5s ease-out;
 			display: block;
 			z-index: 50;
+			box-sizing: border-box;
 			// margin: auto;
-			padding:30px;
+			padding:40px;
 			text-align: center;
 			align-self: center;
-			background-color: rgba(255,255,255,.6);
+			// background-color: rgba(255,255,255,.6);
 			.hero, .sub-title{
-				height: 100%;
-				margin: 10px auto;
+				// height: 100%;
+				margin: -25px auto;
+				line-height: .5em;
 			}
 		}
 		.bio{
@@ -158,6 +161,7 @@ html{
 			margin: 1px;
 			background-color: $primary;
 			flex-wrap: wrap;
+			max-width: 55%;
 		}
 		.skills-logo{
 			width: 100%;
@@ -340,13 +344,13 @@ html{
 		}
 	}
 
-	.SimplePDF {
-		width: 350px;
-		height: 500px;
-		border: 1px dashed red;
-		margin: auto;
-		padding: 15px;
-	}
+	// .SimplePDF {
+	// 	width: 350px;
+	// 	height: 500px;
+	// 	border: 1px dashed red;
+	// 	margin: auto;
+	// 	padding: 15px;
+	// }
 	// .funnyHead, .funnyHead img{
 	// 	animation: riseUp 2s ease-out;
 	// 	position: fixed;

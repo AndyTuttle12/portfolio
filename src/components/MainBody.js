@@ -49,13 +49,13 @@ class MainBody extends Component {
 			<div className="MainRoutes">
 				<div className="centered" onMouseMove={this.onMouseMove} ref="foreground">
 					<div className="hero">
-						<h1>Hi, I&#39;m Andy.</h1>
+						<h1>Hi there</h1>
 					</div>
 					<div className="sub-title">
-						<h2>I&#39;m a Web Developer.</h2>
+						<h2>I&#39;m glad you found me</h2>
 					</div>
 					<div className="text">
-						<h3>Please look around...</h3>
+						<h3>Andy Tuttle, Web Developer</h3>
 					</div>
 				</div>
 				<div className="parallax-bg" ref="section" onMouseMove={this.onMouseMove}>
