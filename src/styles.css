@@ -378,6 +378,14 @@ html {
   width: 108%;
   height: 108%;
 }
+/* line 343, ../compass/sass/views/_home.scss */
+.App .SimplePDF {
+  width: 350px;
+  height: 500px;
+  border: 1px dashed red;
+  margin: auto;
+  padding: 15px;
+}
 
 @keyframes scaleUp {
   from {
@@ -414,89 +422,89 @@ html {
   }
 }
 @media only screen and (max-width: 499px) {
-  /* line 375, ../compass/sass/views/_home.scss */
+  /* line 382, ../compass/sass/views/_home.scss */
   .MainMenu {
     width: 170px;
     margin-left: -150px;
     transition: all 1s;
     transform: translate(0px);
   }
-  /* line 378, ../compass/sass/views/_home.scss */
+  /* line 385, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
     transform: translate(150px);
   }
-  /* line 382, ../compass/sass/views/_home.scss */
+  /* line 389, ../compass/sass/views/_home.scss */
   .MainMenu .nav {
     width: 80%;
   }
-  /* line 385, ../compass/sass/views/_home.scss */
+  /* line 392, ../compass/sass/views/_home.scss */
   .MainMenu .nav ul li {
     line-height: 2em;
   }
-  /* line 390, ../compass/sass/views/_home.scss */
+  /* line 397, ../compass/sass/views/_home.scss */
   .MainMenu .burger {
     right: 4px;
   }
 
-  /* line 395, ../compass/sass/views/_home.scss */
+  /* line 402, ../compass/sass/views/_home.scss */
   .MainRoutes .centered {
     margin: auto;
     margin-left: 40px;
   }
-  /* line 399, ../compass/sass/views/_home.scss */
+  /* line 406, ../compass/sass/views/_home.scss */
   .MainRoutes .title {
     margin: 0px 10px 0 50px;
   }
-  /* line 402, ../compass/sass/views/_home.scss */
+  /* line 409, ../compass/sass/views/_home.scss */
   .MainRoutes .title.projects {
     font-size: 40px;
   }
-  /* line 405, ../compass/sass/views/_home.scss */
+  /* line 412, ../compass/sass/views/_home.scss */
   .MainRoutes .bio {
     padding: 0px 30px 10px 50px;
   }
-  /* line 407, ../compass/sass/views/_home.scss */
+  /* line 414, ../compass/sass/views/_home.scss */
   .MainRoutes .bio img {
     width: 90%;
   }
-  /* line 411, ../compass/sass/views/_home.scss */
+  /* line 418, ../compass/sass/views/_home.scss */
   .MainRoutes .skills {
     width: 90vw;
     height: auto;
     margin-left: 10vw;
     flex-wrap: wrap;
   }
-  /* line 416, ../compass/sass/views/_home.scss */
+  /* line 423, ../compass/sass/views/_home.scss */
   .MainRoutes .skills .currentSkills, .MainRoutes .skills .futureSkills {
     margin: 2px auto;
   }
 
-  /* line 421, ../compass/sass/views/_home.scss */
+  /* line 428, ../compass/sass/views/_home.scss */
   .feature {
     width: 90vw;
     margin: 0 0 0 10vw;
   }
-  /* line 424, ../compass/sass/views/_home.scss */
+  /* line 431, ../compass/sass/views/_home.scss */
   .feature img {
     width: 100%;
   }
 
-  /* line 428, ../compass/sass/views/_home.scss */
+  /* line 435, ../compass/sass/views/_home.scss */
   .feature.contact-form {
     overflow-y: scroll;
   }
 
-  /* line 431, ../compass/sass/views/_home.scss */
+  /* line 438, ../compass/sass/views/_home.scss */
   .feature.projects {
     padding: 0px;
   }
-  /* line 433, ../compass/sass/views/_home.scss */
+  /* line 440, ../compass/sass/views/_home.scss */
   .feature.projects h2 {
     margin-bottom: 0px;
   }
 
-  /* line 437, ../compass/sass/views/_home.scss */
+  /* line 444, ../compass/sass/views/_home.scss */
   .funnyHead img {
     animation: riseUpMobile 10s ease-out;
     position: fixed;
@@ -508,7 +516,7 @@ html {
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 999px) {
-  /* line 452, ../compass/sass/views/_home.scss */
+  /* line 459, ../compass/sass/views/_home.scss */
   .MainMenu {
     margin-left: -300px;
     width: 350px;
@@ -516,58 +524,58 @@ html {
     transition: all 1s;
     transform: translate(0px);
   }
-  /* line 456, ../compass/sass/views/_home.scss */
+  /* line 463, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
     transform: translate(300px);
   }
-  /* line 460, ../compass/sass/views/_home.scss */
+  /* line 467, ../compass/sass/views/_home.scss */
   .MainMenu .nav {
     width: 50%;
   }
-  /* line 463, ../compass/sass/views/_home.scss */
+  /* line 470, ../compass/sass/views/_home.scss */
   .MainMenu .nav ul li {
     line-height: 4em;
   }
-  /* line 468, ../compass/sass/views/_home.scss */
+  /* line 475, ../compass/sass/views/_home.scss */
   .MainMenu .burger {
     right: 10px;
   }
 
-  /* line 473, ../compass/sass/views/_home.scss */
+  /* line 480, ../compass/sass/views/_home.scss */
   .MainRoutes .centered {
     margin: auto;
   }
-  /* line 476, ../compass/sass/views/_home.scss */
+  /* line 483, ../compass/sass/views/_home.scss */
   .MainRoutes .title {
     margin: 20px auto;
   }
-  /* line 479, ../compass/sass/views/_home.scss */
+  /* line 486, ../compass/sass/views/_home.scss */
   .MainRoutes .bio {
     padding: 0px 60px 10px 80px;
   }
-  /* line 481, ../compass/sass/views/_home.scss */
+  /* line 488, ../compass/sass/views/_home.scss */
   .MainRoutes .bio img {
     width: 40%;
   }
-  /* line 485, ../compass/sass/views/_home.scss */
+  /* line 492, ../compass/sass/views/_home.scss */
   .MainRoutes .skills {
     width: 80%;
     height: 80%;
     margin: 0 10% 0 18%;
   }
-  /* line 489, ../compass/sass/views/_home.scss */
+  /* line 496, ../compass/sass/views/_home.scss */
   .MainRoutes .skills .currentSkills, .MainRoutes .skills .futureSkills {
     margin: 5px;
   }
 
-  /* line 494, ../compass/sass/views/_home.scss */
+  /* line 501, ../compass/sass/views/_home.scss */
   .feature {
     width: 70%;
     margin: auto;
   }
 
-  /* line 498, ../compass/sass/views/_home.scss */
+  /* line 505, ../compass/sass/views/_home.scss */
   .funnyHead img {
     animation: riseUpTablet 10s ease-out;
     position: fixed;
@@ -579,7 +587,7 @@ html {
   }
 }
 @media only screen and (min-width: 1000px) {
-  /* line 512, ../compass/sass/views/_home.scss */
+  /* line 519, ../compass/sass/views/_home.scss */
   .MainMenu {
     margin-left: -300px;
     width: 300px;
@@ -587,59 +595,59 @@ html {
     transition: all 1s;
     transform: translate(30px);
   }
-  /* line 516, ../compass/sass/views/_home.scss */
+  /* line 523, ../compass/sass/views/_home.scss */
   .MainMenu:hover {
     transition: all 1s;
     transform: translate(300px);
   }
-  /* line 520, ../compass/sass/views/_home.scss */
+  /* line 527, ../compass/sass/views/_home.scss */
   .MainMenu .nav {
     width: 50%;
   }
-  /* line 523, ../compass/sass/views/_home.scss */
+  /* line 530, ../compass/sass/views/_home.scss */
   .MainMenu .nav ul li {
     line-height: 4em;
   }
-  /* line 528, ../compass/sass/views/_home.scss */
+  /* line 535, ../compass/sass/views/_home.scss */
   .MainMenu .burger {
     right: 10px;
   }
 
-  /* line 533, ../compass/sass/views/_home.scss */
+  /* line 540, ../compass/sass/views/_home.scss */
   .MainRoutes .centered {
     margin: auto;
   }
-  /* line 536, ../compass/sass/views/_home.scss */
+  /* line 543, ../compass/sass/views/_home.scss */
   .MainRoutes .title {
     margin: 20px auto;
   }
-  /* line 540, ../compass/sass/views/_home.scss */
+  /* line 547, ../compass/sass/views/_home.scss */
   .MainRoutes .bio img {
     width: 20%;
   }
-  /* line 544, ../compass/sass/views/_home.scss */
+  /* line 551, ../compass/sass/views/_home.scss */
   .MainRoutes .skills {
     width: 80%;
     height: 80%;
     margin: auto;
   }
-  /* line 548, ../compass/sass/views/_home.scss */
+  /* line 555, ../compass/sass/views/_home.scss */
   .MainRoutes .skills .currentSkills, .MainRoutes .skills .futureSkills {
     margin: 5px;
   }
 
-  /* line 553, ../compass/sass/views/_home.scss */
+  /* line 560, ../compass/sass/views/_home.scss */
   .feature {
     width: 50%;
     height: 600px;
     margin: auto;
   }
-  /* line 557, ../compass/sass/views/_home.scss */
+  /* line 564, ../compass/sass/views/_home.scss */
   .feature img {
     margin-bottom: 40px;
   }
 
-  /* line 561, ../compass/sass/views/_home.scss */
+  /* line 568, ../compass/sass/views/_home.scss */
   .funnyHead img {
     animation: riseUpDesktop 10s ease-out;
     position: fixed;
