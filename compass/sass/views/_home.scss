@@ -14,7 +14,7 @@
 		// 	margin: 20px auto;
 		// }
 		.centered{
-			color: $blank;
+			color: $secondary;
 			animation: scaleUp 1.5s ease-out;
 			display: block;
 			z-index: 50;
@@ -31,13 +31,15 @@
 			}
 		}
 	}
+	
 	.parallax-bg{
+		overflow: hidden;
 		position: absolute;
 		z-index: 0;
-		top:-100px;
-		left: -110px;
-		width: 101.5vw;
-		height: 105.8vh;
+		// top:-10px;
+		// left: -110px;
+		// width: 106.5vw;
+		// height: 101vh;
 		.l1{
 			z-index:5;
 		}
@@ -58,7 +60,7 @@
 			top:0;
 			left:0;
 			width: 108%;
-			height: 108%;
+			height: 109%;
 		}
 	}
 }

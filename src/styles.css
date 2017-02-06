@@ -250,7 +250,7 @@ html {
 }
 /* line 16, ../compass/sass/views/_home.scss */
 .App .MainRoutes .centered {
-  color: #eaeded;
+  color: #7AC1D4;
   animation: scaleUp 1.5s ease-out;
   display: block;
   z-index: 50;
@@ -264,42 +264,39 @@ html {
   margin: -25px auto;
   line-height: .5em;
 }
-/* line 34, ../compass/sass/views/_home.scss */
+/* line 35, ../compass/sass/views/_home.scss */
 .App .parallax-bg {
+  overflow: hidden;
   position: absolute;
   z-index: 0;
-  top: -100px;
-  left: -110px;
-  width: 101.5vw;
-  height: 105.8vh;
 }
-/* line 41, ../compass/sass/views/_home.scss */
+/* line 43, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l1 {
   z-index: 5;
 }
-/* line 44, ../compass/sass/views/_home.scss */
+/* line 46, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l2 {
   z-index: 4;
 }
-/* line 47, ../compass/sass/views/_home.scss */
+/* line 49, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l3 {
   z-index: 3;
 }
-/* line 50, ../compass/sass/views/_home.scss */
+/* line 52, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l4 {
   z-index: 2;
 }
-/* line 53, ../compass/sass/views/_home.scss */
+/* line 55, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l5 {
   z-index: 1;
 }
-/* line 56, ../compass/sass/views/_home.scss */
+/* line 58, ../compass/sass/views/_home.scss */
 .App .parallax-bg img {
   position: absolute;
   top: 0;
   left: 0;
   width: 108%;
-  height: 108%;
+  height: 109%;
 }
 
 /* line 7, ../compass/sass/views/_about.scss */
@@ -526,6 +523,14 @@ html {
   .feature.projects h2 {
     margin-bottom: 0px;
   }
+
+  /* line 72, ../compass/sass/views/_mobile.scss */
+  .parallax-bg {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 999px) {
   /* line 9, ../compass/sass/views/_tablet.scss */
@@ -586,6 +591,14 @@ html {
   .feature {
     width: 70%;
     margin: auto;
+  }
+
+  /* line 56, ../compass/sass/views/_tablet.scss */
+  .parallax-bg {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -648,5 +661,13 @@ html {
   /* line 55, ../compass/sass/views/_desktop.scss */
   .feature img {
     margin-bottom: 40px;
+  }
+
+  /* line 59, ../compass/sass/views/_desktop.scss */
+  .parallax-bg {
+    top: -10px;
+    left: -110px;
+    width: 106.55vw;
+    height: 101.1vh;
   }
 }
