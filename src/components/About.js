@@ -17,6 +17,9 @@ import mysql from '../../devicon-master/icons/mysql/mysql-original-wordmark.svg'
 import nodejs from '../../devicon-master/icons/nodejs/nodejs-original-wordmark.svg';
 import python from '../../devicon-master/icons/python/python-original-wordmark.svg';
 import typescript from '../../devicon-master/icons/typescript/typescript-original.svg';
+import pug from '../pug-logo.svg';
+import postcss from '../postcss.svg';
+import socketio from '../socket-io.svg';
 import '../styles.css';
 
 class About extends Component {
@@ -47,15 +50,19 @@ class About extends Component {
 						<img src={apache} className="skills-logo" alt="apache" />
 						<img src={babel} className="skills-logo" alt="babel" />
 						<img src={linux} className="skills-logo" alt="linux" />
-						<img src={mongodb} className="skills-logo" alt="mongodb" />
 						<img src={nodejs} className="skills-logo" alt="nodejs" />
+						
 					</div>
 					<div className="futureSkills">
-						<h2>What I am learning.</h2>	
+						<h2>What I am learning.</h2>
+						<img src={mongodb} className="skills-logo" alt="mongodb" />	
 						<img src={angularjs} className="skills-logo" alt="angularjs" />				
 						<img src={mysql} className="skills-logo" alt="mysql" />
 						<img src={python} className="skills-logo" alt="python" />
 						<img src={typescript} className="skills-logo" alt="typescript" />
+						<img src={postcss} className="skills-logo" alt="postcss" />
+						<img src={socketio} className="skills-logo" alt="socketio" />
+						<img src={pug} className="skills-logo" alt="pug" />
 					</div>
 				</div>
 			</div>
