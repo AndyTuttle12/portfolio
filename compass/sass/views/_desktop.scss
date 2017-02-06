@@ -1,0 +1,59 @@
+// -------------------------------
+// _DESKTOP.SCSS
+// Desktop View Styling
+// -------------------------------
+
+@media only screen and (min-width: 1000px) {
+	.App {
+	}
+	.MainMenu{
+		margin-left:-300px;
+		width: 300px;
+		max-width: 300px;
+		&:hover{
+			@include menuShowDesktop();
+		}
+		@include menuBackDesktop();
+		.nav{
+			width: 50%;
+			ul{
+				li{
+					line-height: 4em;
+				}
+			}
+		}
+		.burger{
+			right:10px;
+		}
+	}
+	.MainRoutes{
+		.centered{
+			margin: auto;
+		}
+		.title{
+			margin: 20px auto;
+		}
+		.bio{
+			img{
+				width:20%;
+			}
+		}
+		.skills{
+			width: 80%;
+			height: 80%;
+			margin: auto;
+			.currentSkills, .futureSkills{
+				max-width: 55%;
+				margin: 5px;
+			}
+		}
+	}
+	.feature{
+		width: 50%;
+		height: 600px;
+		margin: auto;
+		img{
+			margin-bottom:40px;
+		}
+	}
+}

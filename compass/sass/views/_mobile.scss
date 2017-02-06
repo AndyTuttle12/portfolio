@@ -1,0 +1,72 @@
+// -------------------------------
+// _MOBILE.SCSS
+// Mobile View Styling
+// -------------------------------
+
+@media only screen and (max-width: 499px) {
+	.App {
+	}
+	.MainMenu{
+		width: 170px;
+		margin-left: -150px;
+		&:hover{
+			@include menuShowMobile();
+		}
+		@include menuBackMobile();
+		.nav{
+			width:80%;
+			ul{
+				li{
+					line-height: 2em;
+				}
+			}
+		}	
+		.burger{
+			right: 4px;
+		}
+	}
+	.MainRoutes{
+		.centered{
+			margin: auto;
+			margin-left:40px;
+		}
+		.title{
+			margin: 0px 10px 0 50px;
+		}
+		.title.projects{
+			font-size: 40px;
+		}
+		.bio{
+			padding:0px 30px 10px 50px;
+			img{
+				width:90%;
+			}
+		}
+		.skills{
+			width: 90vw;
+			height: auto;
+			margin-left: 10vw;
+			flex-wrap: wrap;
+			.currentSkills, .futureSkills{
+				max-width: 100%;
+				margin: 2px auto;
+			}
+		}
+	}
+	.feature{
+		width: 90vw;
+		margin: 0 0 0 10vw ;
+		img{
+			width:100%;
+		}
+	}
+	.feature.contact-form{
+		overflow-y: scroll;
+	}
+	.feature.projects{
+		padding:0px;
+		h2{
+			margin-bottom:0px;
+		}
+	}
+}

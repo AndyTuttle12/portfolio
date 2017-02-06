@@ -1,9 +1,11 @@
- @import "compass/utilities";
- @import "compass/css3";
+// COMPASS
+// -------------------------------
+@import "compass/utilities";
+@import "compass/css3";
 
 // FONTS
 // -------------------------------
- @import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,700');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:100,200,400,700');
 
 // CONFIGS
 // -------------------------------
@@ -19,4 +21,9 @@
 // VIEWS
 // -------------------------------
 @import "views/home";
-
+@import "views/about";
+@import "views/portfolio";
+@import "views/contact";
+@import "views/mobile";
+@import "views/tablet";
+@import "views/desktop";

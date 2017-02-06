@@ -1,0 +1,56 @@
+// -------------------------------
+// _TABLET.SCSS
+// Tablet View Styling
+// -------------------------------
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+	.App {
+	}
+	.MainMenu{
+		margin-left:-300px;
+		width: 350px;
+		max-width: 330px;
+		&:hover{
+			@include menuShowTablet();
+		}
+		@include menuBackTablet();
+		.nav{
+			width: 50%;
+			ul{
+				li{
+					line-height: 4em;
+				}
+			}
+		}
+		.burger{
+			right:10px;
+		}
+	}
+	.MainRoutes{
+		.centered{
+			margin: auto;
+		}
+		.title{
+			margin: 20px auto;
+		}
+		.bio{
+			padding:0px 60px 10px 80px;
+			img{
+				width:40%;
+			}
+		}
+		.skills{
+			width: 80%;
+			height: 80%;
+			margin: 0 10% 0 18%;
+			.currentSkills, .futureSkills{
+				max-width: 50%;
+				margin: 5px;
+			}
+		}
+	}
+	.feature{
+		width: 70%;
+		margin: auto;
+	}
+}
