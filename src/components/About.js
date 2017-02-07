@@ -1,3 +1,8 @@
+// -------------------------------
+// About.js
+// About view
+// -------------------------------
+
 import React, { Component } from 'react';
 import html5 from '../../devicon-master/icons/html5/html5-original-wordmark.svg';
 import css3 from '../../devicon-master/icons/css3/css3-original-wordmark.svg';
@@ -51,17 +56,16 @@ class About extends Component {
 						<img src={babel} className="skills-logo" alt="babel" />
 						<img src={linux} className="skills-logo" alt="linux" />
 						<img src={nodejs} className="skills-logo" alt="nodejs" />
-						
+						<img src={mongodb} className="skills-logo" alt="mongodb" />	
+						<img src={socketio} className="skills-logo" alt="socketio" />
 					</div>
 					<div className="futureSkills">
-						<h2>What I am learning.</h2>
-						<img src={mongodb} className="skills-logo" alt="mongodb" />	
+						<h2>What I am learning.</h2>				
 						<img src={angularjs} className="skills-logo" alt="angularjs" />				
 						<img src={mysql} className="skills-logo" alt="mysql" />
 						<img src={python} className="skills-logo" alt="python" />
 						<img src={typescript} className="skills-logo" alt="typescript" />
 						<img src={postcss} className="skills-logo" alt="postcss" />
-						<img src={socketio} className="skills-logo" alt="socketio" />
 						<img src={pug} className="skills-logo" alt="pug" />
 					</div>
 				</div>

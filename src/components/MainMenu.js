@@ -1,3 +1,8 @@
+// -------------------------------
+// MainMenu.js
+// Main sliding menu
+// -------------------------------
+
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import github from '../../devicon-master/icons/github/github-original.svg';

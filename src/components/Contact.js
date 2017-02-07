@@ -1,3 +1,8 @@
+// -------------------------------
+// Contact.js
+// Contact view
+// -------------------------------
+
 import React, { Component } from 'react';
 import '../styles.css';
 

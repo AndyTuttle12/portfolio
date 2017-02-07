@@ -1,4 +1,9 @@
- import React, { Component } from 'react';
+// -------------------------------
+// MainBody.js
+// Home / Main view
+// -------------------------------
+
+import React, { Component } from 'react';
 import '../styles.css';
 
 class MainBody extends Component {

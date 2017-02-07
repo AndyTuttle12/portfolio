@@ -1,3 +1,8 @@
+// -------------------------------
+// Resume.js
+// Resume view [UNUSED]
+// -------------------------------
+
 import React, { Component } from 'react';
 import '../styles.css';
 

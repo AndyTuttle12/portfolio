@@ -1,3 +1,8 @@
+// -------------------------------
+// INDEX.JS
+// Global Routes and Imports
+// -------------------------------
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';

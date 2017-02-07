@@ -1,3 +1,8 @@
+// -------------------------------
+// Portfolio.js
+// Portfolio view
+// -------------------------------
+
 import React, { Component } from 'react';
 import '../styles.css';
 
