@@ -24,6 +24,10 @@
 		}
 		.burger{
 			right:10px;
+			top: 48%;
+			&img{
+				transform: rotate(90deg);
+			}
 		}
 	}
 	.MainRoutes{

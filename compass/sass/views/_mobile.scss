@@ -23,6 +23,11 @@
 		}	
 		.burger{
 			right: 4px;
+			top: 1%;
+			&img{
+				margin-right: -60px;
+				transform: rotate(0deg);
+			}
 		}
 	}
 	.MainRoutes{

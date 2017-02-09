@@ -66,6 +66,7 @@ html{
 		height: 100vh;
 		background-color: $primary;
 		@include heading();
+		transition: all .5s;
 		// &:hover{
 		// 	@include menuShowDesktop();
 		// }
@@ -104,13 +105,14 @@ html{
 		}
 		.burger{
 			position: absolute;
-			top: 48%;
+			
+			transition: all .5s;
 			// right: 4px;
 			img{
+				// margin-right: -60px;
 				height: 25px;
 				opacity: .6;
 				transition: all .5s;
-				transform: rotate(90deg);
 			}
 		}
 	}
