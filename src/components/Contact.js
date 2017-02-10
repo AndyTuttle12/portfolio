@@ -5,17 +5,49 @@
 
 import React, { Component } from 'react';
 import '../styles.css';
+import $ from 'jquery';
+
+
 
 class Contact extends Component {
+	// constructor(props) {
+	// 	super(props);
+	// 	this.state = {
+
+	// 	}
+	// }
+
+	handleContact(event){
+		// console.log(event.target[0].value);
+		// event.preventDefault();
+		// console.dir(event.target);
+		$.ajax({
+			url: 'http://localhost:3003/send/email',
+			headers: {
+				'Content-Type':'application/x-www-form-urlencoded'
+			},
+			method: 'POST',
+			crossDomain: 'true',
+			dataType: 'json',
+			data: {'name': event.target[0].value,'email':event.target[1].value, 'message': event.target[2].value},
+			success: (data)=>{
+				// console.log(data.message);
+				console.log('SENT DATA TO BACKEND')
+			}
+		}).fail(function(jqXhr) {
+			console.log('failed');
+		});
+	}
+
 	render() {
 		return (
-			<div className="Contact  MainRoutes" >
+			<div className="Contact	MainRoutes" >
 				<div className="title">
 					<h1>Say Hello!</h1>
 				</div>
 				<div className="feature contact-form">
 					<h2>Let&#39;s meet for coffee!</h2>
-					<form>
+					<form onSubmit={this.handleContact}>
 						<input className="textbox" type="text" placeholder="Your Name"/><br/>
 						<input className="textbox" type="email" placeholder="Email" /><br/>
 						<textarea className="textarea" type="text-area" placeholder="Your Message"></textarea><br/>
