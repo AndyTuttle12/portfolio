@@ -20,12 +20,16 @@ html{
 	transition: all 1s;
 
 	h1{
-		font-size: 45px;
+		font-size: 48px;
+		font-family: $headingFonts;
+		color: $accent;
 		line-height: 1.2em;
 		font-weight: 400;
 	}
 	h2{
 		font-size: 40px;
+		font-family: $headingFonts;
+		color: $accent;
 		line-height: 1.2em;
 		font-weight: 400;
 	}

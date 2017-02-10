@@ -58,15 +58,15 @@ class About extends Component {
 						<img src={nodejs} className="skills-logo" alt="nodejs" />
 						<img src={mongodb} className="skills-logo" alt="mongodb" />	
 						<img src={socketio} className="skills-logo" alt="socketio" />
+						<img src={mysql} className="skills-logo" alt="mysql" />
+						<img src={pug} className="skills-logo" alt="pug" />
 					</div>
 					<div className="futureSkills">
 						<h2>What I am learning.</h2>				
 						<img src={angularjs} className="skills-logo" alt="angularjs" />				
-						<img src={mysql} className="skills-logo" alt="mysql" />
 						<img src={python} className="skills-logo" alt="python" />
 						<img src={typescript} className="skills-logo" alt="typescript" />
-						<img src={postcss} className="skills-logo" alt="postcss" />
-						<img src={pug} className="skills-logo" alt="pug" />
+						<img src={postcss} className="skills-logo" alt="postcss" />						
 					</div>
 				</div>
 			</div>
