@@ -7,7 +7,7 @@ var bodyParser  = require('body-parser');
 var morgan      = require('morgan');
 var nodemailer  = require('nodemailer');
 var cors        = require('cors');
-var config 		= require('../config.js');
+var config 		= require('./config.js');
 
 
 // =================================================================
@@ -43,14 +43,12 @@ app.post('/send/email', (req,res)=>{
 		    to: 'andytuttle12@gmail.com', // list of receivers
 		    subject: 'Contact form submission from portfolio ✔ ', // Subject line
 		    // text: 'Hello world ?', // plain text body
-		    html: '<b> Hello, Andy. Someone made a contact form submission on your portfolio website. </br> email: ' + req.body.email + '</br> name: ' + req.body.name + '</br> message: ' + req.body.message + '</b>' // html body
+		    html: '<strong> Hello, Andy. </strong> <br/><br/> <p>Someone made a contact form submission on your portfolio website.</p> <br/> <strong>Email: </strong>' + req.body.email + '<br/> <strong>Name: </strong>' + req.body.name + '<br/> <strong>Message: </strong><p>' + req.body.message +'</p><br/>' // html body
 		};
 
 		// send mail with defined transport object
 		transporter.sendMail(mailOptions, (error, info)=> {
-		    if (error) {
-		        return console.log(error);
-		    }
+		    if (error)return error;
 		    // console.log(info.messageId, info.response);
 		});
 

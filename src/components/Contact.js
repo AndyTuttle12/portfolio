@@ -6,20 +6,22 @@
 import React, { Component } from 'react';
 import '../styles.css';
 import $ from 'jquery';
+import { browserHistory } from 'react-router';
 
 
 
 class Contact extends Component {
-	// constructor(props) {
-	// 	super(props);
-	// 	this.state = {
+	constructor(props) {
+		super(props);
+	}
 
-	// 	}
-	// }
+	componentDidUpdate(prevProps, prevState) {
+		browserHistory.push('/');
+	}
 
 	handleContact(event){
 		// console.log(event.target[0].value);
-		// event.preventDefault();
+		event.preventDefault();
 		// console.dir(event.target);
 		$.ajax({
 			url: 'http://35.165.246.93:3003/send/email',
@@ -31,7 +33,7 @@ class Contact extends Component {
 			dataType: 'json',
 			data: {'name': event.target[0].value,'email':event.target[1].value, 'message': event.target[2].value},
 			success: (data)=>{
-				// console.log(data.message);
+				// browserHistory.push('/');
 				console.log('SENT DATA TO BACKEND')
 			}
 		}).fail(function(jqXhr) {
