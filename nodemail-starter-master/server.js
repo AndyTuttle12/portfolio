@@ -63,4 +63,4 @@ app.post('/send/email', (req,res)=>{
 // start the server ================================================
 // =================================================================
 app.listen(port);
-console.log('Your email server is running at http://localhost:' + port);
+console.log('Your email server is running at http://35.165.246.93:' + port);
