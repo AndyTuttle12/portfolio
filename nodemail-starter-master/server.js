@@ -34,6 +34,10 @@ let transporter = nodemailer.createTransport({
     }
 });
 
+app.get('*', (req, res)=>{
+	res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+});
+
 app.post('/send/email', (req,res)=>{
 
 		// console.log(req.body.email);
