@@ -7,7 +7,7 @@ var bodyParser  = require('body-parser');
 var morgan      = require('morgan');
 var nodemailer  = require('nodemailer');
 var cors        = require('cors');
-var config 		= require('../config.js');
+var config 		= require('./config.js');
 
 
 // =================================================================
@@ -65,4 +65,4 @@ app.post('/send/email', (req,res)=>{
 // start the server ================================================
 // =================================================================
 app.listen(port);
-console.log('Your email server is running at http://localhost:' + port);
+console.log('Your email server is running at http://andytuttle.io:' + port);

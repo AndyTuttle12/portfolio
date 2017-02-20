@@ -24,7 +24,7 @@ class Contact extends Component {
 		event.preventDefault();
 		// console.dir(event.target);
 		$.ajax({
-			url: 'http://localhost:3003/send/email',
+			url: 'http://35.165.246.93:3003/send/email',
 			headers: {
 				'Content-Type':'application/x-www-form-urlencoded'
 			},
