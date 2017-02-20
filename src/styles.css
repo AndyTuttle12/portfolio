@@ -393,7 +393,7 @@ html {
   font-size: 20px;
   padding: 2px;
   font-family: "Titillium Web", sans-serif;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -402,7 +402,7 @@ html {
 /* line 26, ../compass/sass/views/_contact.scss */
 .App .feature form .textbox:focus {
   outline: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* line 31, ../compass/sass/views/_contact.scss */
 .App .feature form .textarea {
@@ -411,7 +411,7 @@ html {
   margin: 10px auto;
   font-size: 20px;
   font-family: "Titillium Web", sans-serif;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -421,7 +421,7 @@ html {
 /* line 43, ../compass/sass/views/_contact.scss */
 .App .feature form .textarea:focus {
   outline: none;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* line 48, ../compass/sass/views/_contact.scss */
 .App .feature form .input-btn, .App .feature form input[type=submit] {
@@ -429,17 +429,19 @@ html {
   height: 40px;
   margin: 10px auto;
   font-size: 25px;
+  line-height: 20px;
   font-family: "Titillium Web", sans-serif;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid #60c1fd;
+  background-color: transparent;
+  border: 2px solid #60c1fd;
   color: #323232;
   font-weight: 400;
 }
-/* line 58, ../compass/sass/views/_contact.scss */
+/* line 59, ../compass/sass/views/_contact.scss */
 .App .feature form .input-btn:hover, .App .feature form .input-btn:active, .App .feature form input[type=submit]:hover, .App .feature form input[type=submit]:active {
   background-color: #60c1fd;
+  color: white;
 }
-/* line 61, ../compass/sass/views/_contact.scss */
+/* line 63, ../compass/sass/views/_contact.scss */
 .App .feature form .input-btn:focus, .App .feature form input[type=submit]:focus {
   outline: none;
 }
@@ -448,14 +450,14 @@ html {
   /* line 9, ../compass/sass/views/_mobile.scss */
   .MainMenu {
     width: 170px;
-    margin-left: -150px;
+    margin-left: -170px;
     transition: all 1s;
-    transform: translate(0px);
+    transform: translate(-20px);
   }
   /* line 12, ../compass/sass/views/_mobile.scss */
   .MainMenu:hover {
     transition: all 1s;
-    transform: translate(150px);
+    transform: translate(170px);
   }
   /* line 16, ../compass/sass/views/_mobile.scss */
   .MainMenu .nav {
@@ -467,7 +469,7 @@ html {
   }
   /* line 24, ../compass/sass/views/_mobile.scss */
   .MainMenu .burger {
-    right: 4px;
+    right: -34px;
     top: 1%;
   }
   /* line 27, ../compass/sass/views/_mobile.scss */
@@ -549,7 +551,7 @@ html {
     width: 350px;
     max-width: 330px;
     transition: all 1s;
-    transform: translate(0px);
+    transform: translate(-50px);
   }
   /* line 13, ../compass/sass/views/_tablet.scss */
   .MainMenu:hover {
@@ -566,7 +568,7 @@ html {
   }
   /* line 25, ../compass/sass/views/_tablet.scss */
   .MainMenu .burger {
-    right: 10px;
+    right: -34px;
   }
 
   /* line 30, ../compass/sass/views/_tablet.scss */

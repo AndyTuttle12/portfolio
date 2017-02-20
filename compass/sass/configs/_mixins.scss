@@ -16,12 +16,12 @@
 
 @mixin menuShowMobile(){
 	transition: all 1s;
-	transform: translate(150px);
+	transform: translate(170px);
 }
 
 @mixin menuBackMobile(){
 	transition: all 1s;
-	transform: translate(0px);
+	transform: translate(-20px);
 }
 
 @mixin menuShowTablet(){
@@ -31,7 +31,7 @@
 
 @mixin menuBackTablet(){
 	transition: all 1s;
-	transform: translate(0px);
+	transform: translate(-50px);
 }
 
 @mixin menuShowDesktop(){

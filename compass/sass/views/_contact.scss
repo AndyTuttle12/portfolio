@@ -18,14 +18,14 @@
 				font-size: 20px;
 				padding: 2px;
 				font-family: $textFonts;
-				background-color:rgba(255,255,255,.1);
+				background-color:rgba(255,255,255,.0);
 				border-top: 0px;
 				border-left: 0px;
 				border-right: 0px;
 				border-bottom: 1px solid $accent;
 				&:focus{
 					outline: none;
-					background-color:rgba(255,255,255,.2);
+					background-color:rgba(255,255,255,.1);
 				}
 			}
 			.textarea{
@@ -34,7 +34,7 @@
 				margin: 10px auto;
 				font-size: 20px;
 				font-family: $textFonts;
-				background-color:rgba(255,255,255,.1);
+				background-color:rgba(255,255,255,.0);
 				border-top: 0px;
 				border-left: 0px;
 				border-right: 0px;
@@ -42,7 +42,7 @@
 				resize: none;
 				&:focus{
 					outline: none;
-					background-color:rgba(255,255,255,.2);
+					background-color:rgba(255,255,255,.1);
 				}
 			}
 			.input-btn, input[type=submit] {
@@ -50,13 +50,15 @@
 				height: 40px;
 				margin: 10px auto;
 				font-size: 25px;
+				line-height: 20px;
 				font-family: $textFonts;
-				background-color:rgba(0,0,0,.1);
-				border: 1px solid $accent;
+				background-color:rgba(0,0,0,.0);
+				border: 2px solid $accent;
 				color: $text;
 				font-weight: 400;
 				&:hover, &:active{
 					background-color:$accent;
+					color:white;
 				}
 				&:focus {
 					outline: none;

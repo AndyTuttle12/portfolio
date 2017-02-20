@@ -8,7 +8,7 @@
 	}
 	.MainMenu{
 		width: 170px;
-		margin-left: -150px;
+		margin-left: -170px;
 		&:hover{
 			@include menuShowMobile();
 		}
@@ -22,7 +22,7 @@
 			}
 		}	
 		.burger{
-			right: 4px;
+			right: -34px;
 			top: 1%;
 			&img{
 				margin-right: -60px;
