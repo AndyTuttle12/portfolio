@@ -7,7 +7,7 @@ var bodyParser  = require('body-parser');
 var morgan      = require('morgan');
 var nodemailer  = require('nodemailer');
 var cors        = require('cors');
-var config 		= require('./config.js');
+var config 		= require('../config.js');
 
 
 // =================================================================
@@ -34,9 +34,9 @@ let transporter = nodemailer.createTransport({
     }
 });
 
-app.get('*', (req, res)=>{
-	res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
-});
+// app.get('*', (req, res)=>{
+// 	res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
+// });
 
 app.post('/send/email', (req,res)=>{
 
@@ -65,4 +65,4 @@ app.post('/send/email', (req,res)=>{
 // start the server ================================================
 // =================================================================
 app.listen(port);
-console.log('Your email server is running at http://35.165.246.93:' + port);
+console.log('Your email server is running at http://localhost:' + port);

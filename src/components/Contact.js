@@ -11,20 +11,20 @@ import { browserHistory } from 'react-router';
 
 
 class Contact extends Component {
-	constructor(props) {
-		super(props);
-	}
+	// constructor(props) {
+	// 	super(props);
+	// }
 
-	componentDidUpdate(prevProps, prevState) {
-		browserHistory.push('/');
-	}
+	// componentDidUpdate(prevProps, prevState) {
+	// 	browserHistory.push('/');
+	// }
 
 	handleContact(event){
 		// console.log(event.target[0].value);
 		event.preventDefault();
 		// console.dir(event.target);
 		$.ajax({
-			url: 'http://35.165.246.93:3003/send/email',
+			url: 'http://localhost:3003/send/email',
 			headers: {
 				'Content-Type':'application/x-www-form-urlencoded'
 			},
@@ -33,7 +33,7 @@ class Contact extends Component {
 			dataType: 'json',
 			data: {'name': event.target[0].value,'email':event.target[1].value, 'message': event.target[2].value},
 			success: (data)=>{
-				// browserHistory.push('/');
+				browserHistory.push('/');
 				console.log('SENT DATA TO BACKEND')
 			}
 		}).fail(function(jqXhr) {
