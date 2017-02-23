@@ -52,7 +52,7 @@
 
 @mixin showCard(){
 	transition: all 1s;
-	transform: translateY(-89.8%);
+	transform: translateY(-89%);
 }
 
 @mixin hideCard(){

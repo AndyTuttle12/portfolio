@@ -22,9 +22,11 @@ import mysql from '../../devicon-master/icons/mysql/mysql-original-wordmark.svg'
 import nodejs from '../../devicon-master/icons/nodejs/nodejs-original-wordmark.svg';
 import python from '../../devicon-master/icons/python/python-original-wordmark.svg';
 import typescript from '../../devicon-master/icons/typescript/typescript-original.svg';
+import jasmine from '../../devicon-master/icons/jasmine/jasmine-plain-wordmark.svg';
 import pug from '../pug-logo.svg';
 import postcss from '../postcss.svg';
 import socketio from '../socket-io.svg';
+import redux from '../redux.svg';
 import '../styles.css';
 
 class About extends Component {
@@ -60,11 +62,13 @@ class About extends Component {
 						<img src={socketio} className="skills-logo" alt="socketio" />
 						<img src={mysql} className="skills-logo" alt="mysql" />
 						<img src={pug} className="skills-logo" alt="pug" />
+						<img src={python} className="skills-logo" alt="python" />
+						<img src={jasmine} className="skills-logo" alt="jasmine" />
+						<img src={redux} className="skills-logo" alt="redux" />
 					</div>
 					<div className="futureSkills">
 						<h2>What I am learning.</h2>				
-						<img src={angularjs} className="skills-logo" alt="angularjs" />				
-						<img src={python} className="skills-logo" alt="python" />
+						<img src={angularjs} className="skills-logo" alt="angularjs" />
 						<img src={typescript} className="skills-logo" alt="typescript" />
 						<img src={postcss} className="skills-logo" alt="postcss" />						
 					</div>
