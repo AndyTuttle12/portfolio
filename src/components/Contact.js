@@ -6,7 +6,7 @@
 import React, { Component } from 'react';
 import '../styles.css';
 import $ from 'jquery';
-import { browserHistory } from 'react-router';
+import { hashHistory } from 'react-router';
 
 
 
@@ -33,7 +33,7 @@ class Contact extends Component {
 			dataType: 'json',
 			data: {'name': event.target[0].value,'email':event.target[1].value, 'message': event.target[2].value},
 			success: (data)=>{
-				browserHistory.push('/');
+				hashHistory.push('/');
 				console.log('SENT DATA TO BACKEND')
 			}
 		}).fail(function(jqXhr) {
