@@ -1,65 +1,68 @@
 @import url("https://fonts.googleapis.com/css?family=Amaranth|Titillium+Web");
 /* line 6, ../compass/sass/layout/_layout.scss */
 html {
-  background-color: #eaeded;
+  background-color: transparent;
+  background-image: url("./ps_neutral.png");
+  background-position: center;
+  background-size: repeat;
 }
 
-/* line 10, ../compass/sass/layout/_layout.scss */
+/* line 13, ../compass/sass/layout/_layout.scss */
 .App {
   width: 100vw;
   height: 200%;
   display: flex;
-  color: #323232;
-  background-color: #eaeded;
+  color: #2E2E2E;
+  background-color: transparent;
   font-family: "Titillium Web", sans-serif;
   transition: all 1s;
 }
-/* line 22, ../compass/sass/layout/_layout.scss */
+/* line 23, ../compass/sass/layout/_layout.scss */
 .App h1 {
   font-size: 48px;
   font-family: "Amaranth", sans-serif;
-  color: #60c1fd;
+  color: #306BA2;
   line-height: 1.2em;
   font-weight: 400;
 }
-/* line 29, ../compass/sass/layout/_layout.scss */
+/* line 30, ../compass/sass/layout/_layout.scss */
 .App h2 {
   font-size: 40px;
   font-family: "Amaranth", sans-serif;
-  color: #60c1fd;
+  color: #306BA2;
   line-height: 1.2em;
   font-weight: 400;
 }
-/* line 36, ../compass/sass/layout/_layout.scss */
+/* line 37, ../compass/sass/layout/_layout.scss */
 .App h3 {
   font-size: 30px;
   line-height: 1.5em;
   font-weight: 400;
 }
-/* line 41, ../compass/sass/layout/_layout.scss */
+/* line 42, ../compass/sass/layout/_layout.scss */
 .App h4 {
   font-size: 20px;
   line-height: 1.5em;
   font-weight: 400;
 }
-/* line 46, ../compass/sass/layout/_layout.scss */
+/* line 47, ../compass/sass/layout/_layout.scss */
 .App p {
   font-size: 20px;
-  color: #323232;
+  color: #2E2E2E;
   line-height: 1.2em;
   font-weight: 200;
 }
-/* line 52, ../compass/sass/layout/_layout.scss */
+/* line 53, ../compass/sass/layout/_layout.scss */
 .App a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
-/* line 56, ../compass/sass/layout/_layout.scss */
+/* line 57, ../compass/sass/layout/_layout.scss */
 .App a:hover, .App a:active {
   font-weight: 400;
 }
-/* line 61, ../compass/sass/layout/_layout.scss */
+/* line 62, ../compass/sass/layout/_layout.scss */
 .App .MainMenu {
   position: fixed;
   z-index: 99;
@@ -67,33 +70,33 @@ html {
   top: 0;
   padding: 10px;
   height: 100vh;
-  background-color: #ddd;
+  background-color: #daddde;
   text-align: center;
   line-height: 1em;
-  color: #60c1fd;
+  color: #306BA2;
   transition: all .5s;
 }
-/* line 78, ../compass/sass/layout/_layout.scss */
+/* line 79, ../compass/sass/layout/_layout.scss */
 .App .MainMenu a {
   text-decoration: none;
   color: inherit;
 }
-/* line 81, ../compass/sass/layout/_layout.scss */
+/* line 82, ../compass/sass/layout/_layout.scss */
 .App .MainMenu a:hover, .App .MainMenu a:active, .App .MainMenu a:visited {
   font-weight: 400;
 }
-/* line 85, ../compass/sass/layout/_layout.scss */
+/* line 86, ../compass/sass/layout/_layout.scss */
 .App .MainMenu .nav {
   margin: auto;
   text-align: left;
   line-height: 1em;
-  color: #323232;
+  color: #2E2E2E;
 }
-/* line 88, ../compass/sass/layout/_layout.scss */
+/* line 89, ../compass/sass/layout/_layout.scss */
 .App .MainMenu .nav ul {
   margin-left: -60px;
 }
-/* line 90, ../compass/sass/layout/_layout.scss */
+/* line 91, ../compass/sass/layout/_layout.scss */
 .App .MainMenu .nav ul li, .App .MainMenu .nav ul a {
   padding-left: 0px;
   margin-left: 50px;
@@ -101,51 +104,51 @@ html {
   font-size: 20px;
   font-weight: 400;
 }
-/* line 98, ../compass/sass/layout/_layout.scss */
+/* line 99, ../compass/sass/layout/_layout.scss */
 .App .MainMenu .nav ul span {
   width: 300px;
-  padding: 5px 8px;
+  padding: 10px 15px;
   border-radius: 3px;
 }
-/* line 102, ../compass/sass/layout/_layout.scss */
+/* line 103, ../compass/sass/layout/_layout.scss */
 .App .MainMenu .nav ul span:hover, .App .MainMenu .nav ul span:active {
   transition: all .8s;
-  color: #eaeded;
-  background-color: #60c1fd;
+  color: #eaeaea;
+  background-color: #306BA2;
 }
-/* line 110, ../compass/sass/layout/_layout.scss */
+/* line 111, ../compass/sass/layout/_layout.scss */
 .App .MainMenu .burger {
   position: absolute;
   transition: all .5s;
 }
-/* line 115, ../compass/sass/layout/_layout.scss */
+/* line 116, ../compass/sass/layout/_layout.scss */
 .App .MainMenu .burger img {
   height: 25px;
   opacity: .6;
   transition: all .5s;
 }
-/* line 123, ../compass/sass/layout/_layout.scss */
+/* line 124, ../compass/sass/layout/_layout.scss */
 .App .feature {
   animation: fadein 1.5s ease-out;
   height: 600px;
   align-self: center;
   text-align: center;
   align-items: center;
-  background-color: #ddd;
+  background-color: #daddde;
   padding: 10px;
   overflow: hidden;
 }
-/* line 134, ../compass/sass/layout/_layout.scss */
+/* line 135, ../compass/sass/layout/_layout.scss */
 .App .feature img {
   height: 80%;
   max-height: 500px;
   margin-bottom: 30px;
 }
-/* line 140, ../compass/sass/layout/_layout.scss */
+/* line 141, ../compass/sass/layout/_layout.scss */
 .App .social-links {
   display: inline;
 }
-/* line 142, ../compass/sass/layout/_layout.scss */
+/* line 143, ../compass/sass/layout/_layout.scss */
 .App .social-links a img {
   height: 50%;
   max-height: 60px;
@@ -153,32 +156,32 @@ html {
   filter: grayscale(80%);
   transition: all .5s;
 }
-/* line 148, ../compass/sass/layout/_layout.scss */
+/* line 149, ../compass/sass/layout/_layout.scss */
 .App .social-links a img:hover {
   filter: grayscale(0%);
   transform: scale(1.2);
 }
-/* line 154, ../compass/sass/layout/_layout.scss */
+/* line 155, ../compass/sass/layout/_layout.scss */
 .App .slide-enter {
   margin-bottom: 100vh;
 }
-/* line 156, ../compass/sass/layout/_layout.scss */
+/* line 157, ../compass/sass/layout/_layout.scss */
 .App .slide-enter .slide-enter-active {
   transition: slide-in 800ms ease-in;
 }
-/* line 160, ../compass/sass/layout/_layout.scss */
+/* line 161, ../compass/sass/layout/_layout.scss */
 .App .slide-leave {
   margin-top: 0vh;
 }
-/* line 162, ../compass/sass/layout/_layout.scss */
+/* line 163, ../compass/sass/layout/_layout.scss */
 .App .slide-leave .slide-leave-active {
   transition: slide-out 1200ms ease-in;
 }
-/* line 166, ../compass/sass/layout/_layout.scss */
+/* line 167, ../compass/sass/layout/_layout.scss */
 .App .slide-appear {
   opacity: 0.01;
 }
-/* line 168, ../compass/sass/layout/_layout.scss */
+/* line 169, ../compass/sass/layout/_layout.scss */
 .App .slide-appear .slide-appear-active {
   opacity: 1;
   transition: opacity .2s ease-in;
@@ -248,13 +251,13 @@ html {
   height: 100vh;
   text-align: center;
   line-height: 1em;
-  color: #60c1fd;
+  color: #306BA2;
   display: flex;
   flex-direction: column;
 }
 /* line 16, ../compass/sass/views/_home.scss */
 .App .MainRoutes .centered {
-  color: #022552;
+  color: #2E2E2E;
   animation: scaleUp 1.5s ease-out;
   display: block;
   z-index: 50;
@@ -326,7 +329,7 @@ html {
 /* line 24, ../compass/sass/views/_about.scss */
 .App .skills .currentSkills, .App .skills .futureSkills {
   margin: 1px;
-  background-color: #ddd;
+  background-color: #daddde;
   flex-wrap: wrap;
   min-height: 495px;
 }
@@ -371,7 +374,7 @@ html {
   margin: -10px auto 0;
   width: 0;
   height: 0;
-  border-bottom: 10px solid #323232;
+  border-bottom: 10px solid #2E2E2E;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid transparent;
@@ -397,7 +400,7 @@ html {
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-bottom: 1px solid #60c1fd;
+  border-bottom: 1px solid #306BA2;
 }
 /* line 26, ../compass/sass/views/_contact.scss */
 .App .feature form .textbox:focus {
@@ -415,7 +418,7 @@ html {
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-bottom: 1px solid #60c1fd;
+  border-bottom: 1px solid #306BA2;
   resize: none;
 }
 /* line 43, ../compass/sass/views/_contact.scss */
@@ -426,22 +429,23 @@ html {
 /* line 48, ../compass/sass/views/_contact.scss */
 .App .feature form .input-btn, .App .feature form input[type=submit] {
   width: 35%;
-  height: 40px;
+  min-width: 200px;
+  height: 60px;
   margin: 10px auto;
   font-size: 25px;
   line-height: 20px;
   font-family: "Titillium Web", sans-serif;
   background-color: transparent;
-  border: 2px solid #60c1fd;
-  color: #323232;
+  border: 2px solid #306BA2;
+  color: #2E2E2E;
   font-weight: 400;
 }
-/* line 59, ../compass/sass/views/_contact.scss */
+/* line 60, ../compass/sass/views/_contact.scss */
 .App .feature form .input-btn:hover, .App .feature form .input-btn:active, .App .feature form input[type=submit]:hover, .App .feature form input[type=submit]:active {
-  background-color: #60c1fd;
+  background-color: #306BA2;
   color: white;
 }
-/* line 63, ../compass/sass/views/_contact.scss */
+/* line 64, ../compass/sass/views/_contact.scss */
 .App .feature form .input-btn:focus, .App .feature form input[type=submit]:focus {
   outline: none;
 }

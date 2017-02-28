@@ -47,7 +47,8 @@
 			}
 			.input-btn, input[type=submit] {
 				width: 35%;
-				height: 40px;
+				min-width: 200px;
+				height: 60px;
 				margin: 10px auto;
 				font-size: 25px;
 				line-height: 20px;
