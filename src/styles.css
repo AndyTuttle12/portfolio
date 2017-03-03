@@ -193,6 +193,24 @@ html {
     transform: scale(1);
   }
 }
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  10% {
+    opacity: inherit;
+    transform: translateY(0);
+  }
+  40% {
+    opacity: inherit;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
@@ -252,6 +270,24 @@ html {
   flex-direction: column;
 }
 /* line 16, ../compass/sass/views/_home.scss */
+.App .MainRoutes .thanks {
+  animation: dropDown 5s ease-out;
+  background-color: #daddde;
+  position: fixed;
+  align-self: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #2E2E2E;
+  height: 150px;
+  min-width: 300px;
+  z-index: 200;
+  box-sizing: border-box;
+  opacity: 0;
+  padding: 30px 5%;
+}
+/* line 34, ../compass/sass/views/_home.scss */
 .App .MainRoutes .centered {
   color: #2E2E2E;
   animation: scaleUp 1.5s ease-out;
@@ -262,38 +298,38 @@ html {
   text-align: center;
   align-self: center;
 }
-/* line 28, ../compass/sass/views/_home.scss */
+/* line 46, ../compass/sass/views/_home.scss */
 .App .MainRoutes .centered .hero, .App .MainRoutes .centered .sub-title {
   margin: -25px auto;
   line-height: .5em;
 }
-/* line 36, ../compass/sass/views/_home.scss */
+/* line 54, ../compass/sass/views/_home.scss */
 .App .parallax-bg {
   overflow: hidden;
   position: absolute;
   z-index: 0;
 }
-/* line 44, ../compass/sass/views/_home.scss */
+/* line 62, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l1 {
   z-index: 5;
 }
-/* line 47, ../compass/sass/views/_home.scss */
+/* line 65, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l2 {
   z-index: 4;
 }
-/* line 50, ../compass/sass/views/_home.scss */
+/* line 68, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l3 {
   z-index: 3;
 }
-/* line 53, ../compass/sass/views/_home.scss */
+/* line 71, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l4 {
   z-index: 2;
 }
-/* line 56, ../compass/sass/views/_home.scss */
+/* line 74, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l5 {
   z-index: 1;
 }
-/* line 59, ../compass/sass/views/_home.scss */
+/* line 77, ../compass/sass/views/_home.scss */
 .App .parallax-bg img {
   position: absolute;
   top: 0;

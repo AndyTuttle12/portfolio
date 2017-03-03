@@ -178,6 +178,13 @@ html{
 	to{opacity:inherit; transform: scale(1);}
 }
 
+@keyframes dropDown{
+	0%{opacity:0; transform: translateY(-200px);}
+	10%{opacity: inherit; transform: translateY(0);}
+	40%{opacity: inherit; transform: translateY(0);}
+	100%{opacity: 0; transform: translateY(-200px);}
+}
+
 @keyframes fadein{
 	from{opacity:0;}
 	to{opacity:inherit;}

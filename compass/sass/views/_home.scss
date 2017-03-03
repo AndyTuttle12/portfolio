@@ -13,6 +13,24 @@
 		// .title{
 		// 	margin: 20px auto;
 		// }
+		.thanks{
+			animation: dropDown 5s ease-out;
+			background-color: $primary;
+			position: fixed;
+			align-self:center;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: $secondary;
+			height: 150px;
+			// width: 50vw;
+			min-width: 300px;
+			z-index: 200;
+			box-sizing: border-box;
+			opacity: 0;
+			padding: 30px 5%;
+		}
 		.centered{
 			color: $secondary;
 			animation: scaleUp 1.5s ease-out;

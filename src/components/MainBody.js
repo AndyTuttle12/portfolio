@@ -10,9 +10,19 @@ class MainBody extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			pos: {x: 500, y: 500}
+			pos: {x: 500, y: 500},
+			thanksSent: false,
+			msgSent: "",
+			msg1: "",
+			msg2: ""
 		};
 		this.onMouseMove = this.onMouseMove.bind(this);
+	}
+
+	componentWillMount() {
+		if(this.props.location.query[0] === '1'){
+			this.handleThankYou();
+		}
 	}
 
 	onMouseMove(event){
@@ -24,6 +34,14 @@ class MainBody extends Component {
 			}
 		});
 		this.parallax();
+	}
+
+	handleThankYou(){
+		this.setState({
+			msgSent: "thanks",
+			msg1: "Thanks for reaching out.",
+			msg2: "I will be in contact soon!"
+		})
 	}
 
 	parallax(){
@@ -50,8 +68,10 @@ class MainBody extends Component {
 	}
 
 	render() {
+		
 		return (
 			<div className="MainRoutes">
+				<div className={this.state.msgSent}><h2>{this.state.msg1}<br/>{this.state.msg2}</h2></div>
 				<div className="centered" onMouseMove={this.onMouseMove} ref="foreground">
 					<div className="hero">
 						<h1>Hi there</h1>

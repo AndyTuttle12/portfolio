@@ -33,8 +33,8 @@ class Contact extends Component {
 			dataType: 'json',
 			data: {'name': event.target[0].value,'email':event.target[1].value, 'message': event.target[2].value},
 			success: (data)=>{
-				hashHistory.push('/');
-				console.log('SENT DATA TO BACKEND')
+				hashHistory.push({pathname:'/',query:'1',state:{thanksSent:true}});
+				console.log(this)
 			}
 		}).fail(function(jqXhr) {
 			console.log('failed');
