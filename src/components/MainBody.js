@@ -57,7 +57,7 @@ class MainBody extends Component {
 						<h1>Hi there</h1>
 					</div>
 					<div className="sub-title">
-						<h2>I&#39;m glad you found me</h2>
+						<h2>I{"'"}m glad you found me</h2>
 					</div>
 					<div className="text">
 						<h3>Andy Tuttle, Web Developer</h3>

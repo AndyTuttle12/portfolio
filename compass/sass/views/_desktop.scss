@@ -4,6 +4,18 @@
 // -------------------------------
 
 @media only screen and (min-width: 1000px) {
+	h1{
+		font-size: 48px;
+	}
+	h2{
+		font-size: 40px;
+	}
+	h3{
+		font-size: 30px;
+	}
+	p{
+		font-size: 20px;
+	}
 	.App {
 	}
 	.MainMenu{
@@ -25,8 +37,8 @@
 		.burger{
 			right:10px;
 			top: 48%;
-			&img{
-				transform: rotate(90deg);
+			img{
+				transform: rotate(90deg) scaleX(1.6);
 			}
 		}
 	}

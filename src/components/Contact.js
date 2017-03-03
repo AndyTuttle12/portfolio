@@ -48,7 +48,7 @@ class Contact extends Component {
 					<h1>Say Hello!</h1>
 				</div>
 				<div className="feature contact-form">
-					<h2>Let&#39;s meet for coffee!</h2>
+					<h2>Let{"'"}s meet for coffee!</h2>
 					<form onSubmit={this.handleContact}>
 						<input className="textbox" type="text" placeholder="Your Name"/><br/>
 						<input className="textbox" type="email" placeholder="Email" /><br/>

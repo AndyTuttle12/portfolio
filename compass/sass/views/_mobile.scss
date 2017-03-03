@@ -4,6 +4,19 @@
 // -------------------------------
 
 @media only screen and (max-width: 499px) {
+	h1{
+		font-size: 44px;
+	}
+	h2{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 24px;
+		margin-top: 20px;
+	}
+	p{
+		font-size: 16px;
+	}
 	.App {
 	}
 	.MainMenu{
@@ -34,7 +47,7 @@
 		.centered{
 			margin: auto;
 			
-			margin-top: 50px;
+			margin-top: -25px;
 		}
 		.title{
 			margin: 0px 10px 0 10px;

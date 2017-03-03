@@ -67,7 +67,7 @@ class About extends Component {
 						<img src={redux} className="skills-logo" alt="redux" />
 					</div>
 					<div className="futureSkills">
-						<h2>What I am learning.</h2>				
+						<h2>What I{"'"}m learning.</h2>				
 						<img src={angularjs} className="skills-logo" alt="angularjs" />
 						<img src={typescript} className="skills-logo" alt="typescript" />
 						<img src={postcss} className="skills-logo" alt="postcss" />						
