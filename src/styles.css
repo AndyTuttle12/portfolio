@@ -291,45 +291,47 @@ html {
 .App .MainRoutes .centered {
   color: #2E2E2E;
   animation: scaleUp 1.5s ease-out;
-  display: block;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
   z-index: 50;
   box-sizing: border-box;
   padding: 40px;
-  text-align: center;
   align-self: center;
+  text-align: center;
 }
-/* line 46, ../compass/sass/views/_home.scss */
+/* line 48, ../compass/sass/views/_home.scss */
 .App .MainRoutes .centered .hero, .App .MainRoutes .centered .sub-title {
   margin: -25px auto;
   line-height: .5em;
 }
-/* line 54, ../compass/sass/views/_home.scss */
+/* line 56, ../compass/sass/views/_home.scss */
 .App .parallax-bg {
   overflow: hidden;
   position: absolute;
   z-index: 0;
 }
-/* line 62, ../compass/sass/views/_home.scss */
+/* line 64, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l1 {
   z-index: 5;
 }
-/* line 65, ../compass/sass/views/_home.scss */
+/* line 67, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l2 {
   z-index: 4;
 }
-/* line 68, ../compass/sass/views/_home.scss */
+/* line 70, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l3 {
   z-index: 3;
 }
-/* line 71, ../compass/sass/views/_home.scss */
+/* line 73, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l4 {
   z-index: 2;
 }
-/* line 74, ../compass/sass/views/_home.scss */
+/* line 76, ../compass/sass/views/_home.scss */
 .App .parallax-bg .l5 {
   z-index: 1;
 }
-/* line 77, ../compass/sass/views/_home.scss */
+/* line 79, ../compass/sass/views/_home.scss */
 .App .parallax-bg img {
   position: absolute;
   top: 0;
@@ -747,7 +749,7 @@ html {
   /* line 46, ../compass/sass/views/_desktop.scss */
   .MainRoutes .centered {
     margin: auto;
-    margin-top: 180px;
+    margin-top: 150px;
   }
   /* line 50, ../compass/sass/views/_desktop.scss */
   .MainRoutes .title {
