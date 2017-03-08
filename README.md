@@ -10,4 +10,11 @@ As a student developer at [DigitalCrafts](http://www.digitalcrafts.com), this po
 - The interactive parts of the website are using simple css (scss) transforms, keyframes and animations.
 - Additionally, the current version of the mail server is based on the Node.js mail server NPM package and running from AWS.
 
+## Projects Coming Soon...
+
+- A full jQuery based movie app with live data, filtering and sorting.
+- A functional black jack game with integrated betting.
+- A basic clone of the classic Legend of Zelda game in html canvas.
+- A full-stack e-commerce auction platform for high-tech audio and video equipment.
+
 
