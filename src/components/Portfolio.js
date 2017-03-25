@@ -19,9 +19,9 @@ class Portfolio extends Component {
 					<div className="overlay">
 						<div className="arrow"></div>
 						<h3>Project overview:</h3>
-						<p>CaniGo.co is an app designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their specified budget. The UI is simple and clean, while scripts are running behind the scene, making api calls and filtering the results to match the user&#39;s input. </p>
+						<p>CaniGo.co is an app designed for spontaneous travelers who want to see more of the world. Users enter their place of origin, travel dates, and budget, then CaniGo.co will display destination options within their specified budget. The UI is simple and clean, while scripts are running behind the scene, making api calls and filtering the results to match the user{"'"}s input. </p>
 						<h3>Technology used:</h3>
-						<p>React.js, jQuery, Bootstrap, APIs(Skyscanner), html/css and Javascript ES6</p>
+						<p>React.js, Redux, jQuery, Node.js, Express, MySQL, Amadeus API, Stripe API, HTML/CSS, Sass and Javascript ES6</p>
 					</div>
 				</div>
 			</div>
