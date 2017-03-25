@@ -5,6 +5,11 @@
 
 .App{
 	.feature{
+		&.projects{
+			img{
+				width:100%;
+			}
+		}
 		.overlay{
 			box-sizing: border-box;
 			position:relative;

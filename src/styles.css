@@ -382,7 +382,11 @@ html {
   transform: scale(1.2);
 }
 
-/* line 8, ../compass/sass/views/_portfolio.scss */
+/* line 9, ../compass/sass/views/_portfolio.scss */
+.App .feature.projects img {
+  width: 100%;
+}
+/* line 13, ../compass/sass/views/_portfolio.scss */
 .App .feature .overlay {
   box-sizing: border-box;
   position: relative;
@@ -398,12 +402,12 @@ html {
   transition: all 1s;
   transform: translateY(0%);
 }
-/* line 21, ../compass/sass/views/_portfolio.scss */
+/* line 26, ../compass/sass/views/_portfolio.scss */
 .App .feature .overlay:hover {
   transition: all 1s;
   transform: translateY(-89%);
 }
-/* line 25, ../compass/sass/views/_portfolio.scss */
+/* line 30, ../compass/sass/views/_portfolio.scss */
 .App .feature .overlay .arrow {
   margin: -10px auto 0;
   width: 0;
