@@ -25,6 +25,7 @@ import typescript from '../../devicon-master/icons/typescript/typescript-origina
 import jasmine from '../../devicon-master/icons/jasmine/jasmine-plain-wordmark.svg';
 import pug from '../pug-logo.svg';
 import postcss from '../postcss.svg';
+import webpack from '../webpack.svg';
 import socketio from '../socket-io.svg';
 import redux from '../redux.svg';
 import '../styles.css';
@@ -65,6 +66,7 @@ class About extends Component {
 						<img src={python} className="skills-logo" alt="python" />
 						<img src={jasmine} className="skills-logo" alt="jasmine" />
 						<img src={redux} className="skills-logo" alt="redux" />
+						<img src={webpack} className="skills-logo" alt="webpack" />
 					</div>
 					<div className="futureSkills">
 						<h2>What I{"'"}m learning.</h2>				
