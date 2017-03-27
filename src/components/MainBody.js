@@ -80,7 +80,7 @@ class MainBody extends Component {
 						<h2>I{"'"}m glad you found me</h2>
 					</div>
 					<div className="text">
-						<h3>Andy Tuttle, Web Developer</h3>
+						<h3>Andy Tuttle, Full-Stack Software Engineer</h3>
 					</div>
 				</div>
 				<div className="parallax-bg" ref="section" onMouseMove={this.onMouseMove}>
