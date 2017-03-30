@@ -65,7 +65,18 @@
 	}
 	.feature{
 		width: 70%;
+		&.projects{
+			height: 100%;
+			min-height: 300px;
+			max-height: 360px;
+		}
 		margin: auto;
+		.overlay{
+			&:hover{
+				@include showCardTablet();
+			}
+			@include hideCardTablet();
+		}
 	}
 	.parallax-bg{
 		top:0px;

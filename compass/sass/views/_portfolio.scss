@@ -4,38 +4,43 @@
 // -------------------------------
 
 .App{
-	.feature{
-		&.projects{
-			img{
-				width:100%;
+	.Portfolio.MainRoutes{
+		overflow-y: scroll;
+		.feature{
+			&.projects{
+				margin-bottom:10px;
+				img{
+					width:100%;
+					height: auto;
+				}
 			}
-		}
-		.overlay{
-			box-sizing: border-box;
-			position:relative;
-			z-index: 50;
-			overflow-y: scroll;
-			-webkit-scrollbar: hidden;
-			// -webkit-track: hidden;
-			margin-top: -90px;
-			padding: 30px 20%;
-			width: 100%;
-			height: 100%;
-			background-color: rgba(255,255,255,.9);
-			font-weight: 400;
-			&:hover{
-			  	@include showCard();
-		  	}
-		  	@include hideCard();
-			.arrow{
-				margin: -10px auto 0;
-			  	width: 0; 
-			  	height: 0; 
-			  	border-bottom: 10px solid $text;
-			  	border-left: 10px solid transparent;
-			  	border-right: 10px solid transparent;
-			  	border-top: 10px solid transparent;
-			  	transition: all 1s;
+			.overlay{
+				box-sizing: border-box;
+				position:relative;
+				z-index: 50;
+				overflow-y: scroll;
+				-webkit-scrollbar: hidden;
+				// -webkit-track: hidden;
+				margin-top: -90px;
+				padding: 30px 20%;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(255,255,255,.9);
+				font-weight: 400;
+				&:hover{
+				  	// @include showCard();
+			  	}
+			  	// @include hideCard();
+				.arrow{
+					margin: -10px auto 0;
+				  	width: 0; 
+				  	height: 0; 
+				  	border-bottom: 10px solid $text;
+				  	border-left: 10px solid transparent;
+				  	border-right: 10px solid transparent;
+				  	border-top: 10px solid transparent;
+				  	transition: all 1s;
+				}
 			}
 		}
 	}

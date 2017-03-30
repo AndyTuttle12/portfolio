@@ -50,12 +50,35 @@
 	transform-origin: 50% 25%;
 }
 
-@mixin showCard(){
+@mixin showCardDesktop(){
 	transition: all 1s;
-	transform: translateY(-89%);
+	transform: translateY(-400px);
+
 }
 
-@mixin hideCard(){
+@mixin hideCardDesktop(){
+	transition: all 1s;
+	transform: translateY(0%);
+}
+
+@mixin showCardTablet(){
+	transition: all 1s;
+	transform: translateY(-300px);
+	
+}
+
+@mixin hideCardTablet(){
+	transition: all 1s;
+	transform: translateY(0%);
+}
+
+@mixin showCardMobile(){
+	transition: all 1s;
+	transform: translateY(-160px);
+	
+}
+
+@mixin hideCardMobile(){
 	transition: all 1s;
 	transform: translateY(0%);
 }

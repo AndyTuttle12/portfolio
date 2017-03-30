@@ -382,12 +382,21 @@ html {
   transform: scale(1.2);
 }
 
-/* line 9, ../compass/sass/views/_portfolio.scss */
-.App .feature.projects img {
-  width: 100%;
+/* line 7, ../compass/sass/views/_portfolio.scss */
+.App .Portfolio.MainRoutes {
+  overflow-y: scroll;
 }
-/* line 13, ../compass/sass/views/_portfolio.scss */
-.App .feature .overlay {
+/* line 10, ../compass/sass/views/_portfolio.scss */
+.App .Portfolio.MainRoutes .feature.projects {
+  margin-bottom: 10px;
+}
+/* line 12, ../compass/sass/views/_portfolio.scss */
+.App .Portfolio.MainRoutes .feature.projects img {
+  width: 100%;
+  height: auto;
+}
+/* line 17, ../compass/sass/views/_portfolio.scss */
+.App .Portfolio.MainRoutes .feature .overlay {
   box-sizing: border-box;
   position: relative;
   z-index: 50;
@@ -399,16 +408,9 @@ html {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   font-weight: 400;
-  transition: all 1s;
-  transform: translateY(0%);
 }
-/* line 26, ../compass/sass/views/_portfolio.scss */
-.App .feature .overlay:hover {
-  transition: all 1s;
-  transform: translateY(-89%);
-}
-/* line 30, ../compass/sass/views/_portfolio.scss */
-.App .feature .overlay .arrow {
+/* line 34, ../compass/sass/views/_portfolio.scss */
+.App .Portfolio.MainRoutes .feature .overlay .arrow {
   margin: -10px auto 0;
   width: 0;
   height: 0;
@@ -581,25 +583,41 @@ html {
     margin-left: 0;
   }
   /* line 79, ../compass/sass/views/_mobile.scss */
+  .feature.projects {
+    height: 100%;
+    min-height: 225px;
+    max-height: 320px;
+  }
+  /* line 84, ../compass/sass/views/_mobile.scss */
   .feature img {
     width: 100%;
   }
+  /* line 87, ../compass/sass/views/_mobile.scss */
+  .feature .overlay {
+    transition: all 1s;
+    transform: translateY(0%);
+  }
+  /* line 88, ../compass/sass/views/_mobile.scss */
+  .feature .overlay:hover {
+    transition: all 1s;
+    transform: translateY(-160px);
+  }
 
-  /* line 83, ../compass/sass/views/_mobile.scss */
+  /* line 94, ../compass/sass/views/_mobile.scss */
   .feature.contact-form {
     overflow-y: scroll;
   }
 
-  /* line 86, ../compass/sass/views/_mobile.scss */
+  /* line 97, ../compass/sass/views/_mobile.scss */
   .feature.projects {
     padding: 0px;
   }
-  /* line 88, ../compass/sass/views/_mobile.scss */
+  /* line 99, ../compass/sass/views/_mobile.scss */
   .feature.projects h2 {
     margin-bottom: 0px;
   }
 
-  /* line 92, ../compass/sass/views/_mobile.scss */
+  /* line 103, ../compass/sass/views/_mobile.scss */
   .parallax-bg {
     top: 0px;
     left: 0px;
@@ -689,8 +707,24 @@ html {
     width: 70%;
     margin: auto;
   }
+  /* line 68, ../compass/sass/views/_tablet.scss */
+  .feature.projects {
+    height: 100%;
+    min-height: 300px;
+    max-height: 360px;
+  }
+  /* line 74, ../compass/sass/views/_tablet.scss */
+  .feature .overlay {
+    transition: all 1s;
+    transform: translateY(0%);
+  }
+  /* line 75, ../compass/sass/views/_tablet.scss */
+  .feature .overlay:hover {
+    transition: all 1s;
+    transform: translateY(-300px);
+  }
 
-  /* line 70, ../compass/sass/views/_tablet.scss */
+  /* line 81, ../compass/sass/views/_tablet.scss */
   .parallax-bg {
     top: 0px;
     left: 0px;
@@ -779,14 +813,25 @@ html {
   .feature {
     width: 50%;
     height: 600px;
+    min-height: 600px;
     margin: auto;
   }
-  /* line 72, ../compass/sass/views/_desktop.scss */
+  /* line 73, ../compass/sass/views/_desktop.scss */
   .feature img {
     margin-bottom: 40px;
   }
-
   /* line 76, ../compass/sass/views/_desktop.scss */
+  .feature .overlay {
+    transition: all 1s;
+    transform: translateY(0%);
+  }
+  /* line 77, ../compass/sass/views/_desktop.scss */
+  .feature .overlay:hover {
+    transition: all 1s;
+    transform: translateY(-400px);
+  }
+
+  /* line 83, ../compass/sass/views/_desktop.scss */
   .parallax-bg {
     top: -10px;
     left: -110px;

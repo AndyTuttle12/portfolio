@@ -68,9 +68,16 @@
 	.feature{
 		width: 50%;
 		height: 600px;
+		min-height: 600px;
 		margin: auto;
 		img{
 			margin-bottom:40px;
+		}
+		.overlay{
+			&:hover{
+				@include showCardDesktop();
+			}
+			@include hideCardDesktop();
 		}
 	}
 	.parallax-bg{
