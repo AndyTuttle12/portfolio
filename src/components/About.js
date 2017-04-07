@@ -39,40 +39,40 @@ class About extends Component {
 				</div>
 				<div className="bio">
 					<p>I am a full-stack software engineer who speciallizes in clean, responsive, modular apps and websites.</p>
-					<p>Currently, I am a grauate of DigitalCrafts, a full-stack development bootcamp in Atlanta, GA.</p>
-					<p>Learn more about the bootcamp below:</p>
-					<div><a href="http://www.digitalcrafts.com/"><img src="http://www.digitalcrafts.com/sites/all/themes/digitalcrafts/images/digitalcrafts-site-logo.png" alt="DigitalCrafts" /></a></div>
+					<p>I have a passion for creating engaging web experiences and efficient solutions for clients. I thrive on teamwork, and opportunities to use my creativity and problem-solving skills to create the perfect solution to any project.</p>
+					<p>I am a life-long learner and a recent graduate of <strong><a href="http://www.digitalcrafts.com/">DigitalCrafts</a></strong>, a full-stack development bootcamp in Atlanta, GA. Coming from DigitalCrafts, I have a deep understanding of the software development process, agile methodologies, as well as understanding of how the full tech stack interacts, and how applications work. Even though my training is in a thorough full-stack environment, I spend most of my time in the front-end where I create the intuitive user experience that production level apps demand.</p>
 				</div>
 				<div className="skills">
 					<div className="currentSkills">
-						<h2>What I know.</h2>
-						<img src={html5} className="skills-logo" alt="html5" />
-						<img src={css3} className="skills-logo" alt="css3" />
-						<img src={javascript} className="skills-logo" alt="javascript" />
-						<img src={react} className="skills-logo" alt="react" />
-						<img src={bootstrap} className="skills-logo" alt="bootstrap" />
-						<img src={jquery} className="skills-logo" alt="jquery" />
-						<img src={git} className="skills-logo" alt="git" />
-						<img src={sass} className="skills-logo" alt="sass" />
-						<img src={amazonwebservices} className="skills-logo" alt="amazonwebservices" />
-						<img src={apache} className="skills-logo" alt="apache" />
-						<img src={babel} className="skills-logo" alt="babel" />
-						<img src={linux} className="skills-logo" alt="linux" />
-						<img src={nodejs} className="skills-logo" alt="nodejs" />
-						<img src={mongodb} className="skills-logo" alt="mongodb" />	
-						<img src={socketio} className="skills-logo" alt="socketio" />
-						<img src={mysql} className="skills-logo" alt="mysql" />
-						<img src={pug} className="skills-logo" alt="pug" />
-						<img src={python} className="skills-logo" alt="python" />
-						<img src={jasmine} className="skills-logo" alt="jasmine" />
-						<img src={redux} className="skills-logo" alt="redux" />
-						<img src={webpack} className="skills-logo" alt="webpack" />
+						<div className="skills-title"><h2>What I know</h2></div>
+						<div className="skills-logo-box"><img src={html5} className="skills-logo" alt="html5" />HTML5</div>
+						
+						<div className="skills-logo-box"><img src={css3} className="skills-logo" alt="css3" />CSS3</div>
+						<div className="skills-logo-box"><img src={javascript} className="skills-logo" alt="javascript" />JavaScript</div>
+						<div className="skills-logo-box"><img src={react} className="skills-logo" alt="react" />react.js</div>
+						<div className="skills-logo-box"><img src={bootstrap} className="skills-logo" alt="bootstrap" />Bootstrap</div>
+						<div className="skills-logo-box"><img src={jquery} className="skills-logo" alt="jquery" />jQuery</div>
+						<div className="skills-logo-box"><img src={git} className="skills-logo" alt="git" />Git</div>
+						<div className="skills-logo-box"><img src={sass} className="skills-logo" alt="sass" />Sass</div>
+						<div className="skills-logo-box"><img src={amazonwebservices} className="skills-logo" alt="amazonwebservices" />AWS</div>
+						<div className="skills-logo-box"><img src={apache} className="skills-logo" alt="apache" />Apache</div>
+						<div className="skills-logo-box"><img src={babel} className="skills-logo" alt="babel" />Babel</div>
+						<div className="skills-logo-box"><img src={linux} className="skills-logo" alt="linux" />Linux</div>
+						<div className="skills-logo-box"><img src={nodejs} className="skills-logo" alt="nodejs" />node.js</div>
+						<div className="skills-logo-box"><img src={mongodb} className="skills-logo" alt="mongodb" />MongoDB</div>	
+						<div className="skills-logo-box"><img src={socketio} className="skills-logo" alt="socketio" />socket.io</div>
+						<div className="skills-logo-box"><img src={mysql} className="skills-logo" alt="mysql" />MySQL</div>
+						<div className="skills-logo-box"><img src={pug} className="skills-logo" alt="pug" />Pug</div>
+						<div className="skills-logo-box"><img src={python} className="skills-logo" alt="python" />Python</div>
+						<div className="skills-logo-box"><img src={jasmine} className="skills-logo" alt="jasmine" />Jasmine</div>
+						<div className="skills-logo-box"><img src={redux} className="skills-logo" alt="redux" />Redux</div>
+						<div className="skills-logo-box"><img src={webpack} className="skills-logo" alt="webpack" />Webpack</div>
 					</div>
 					<div className="futureSkills">
-						<h2>What I{"'"}m learning.</h2>				
-						<img src={angularjs} className="skills-logo" alt="angularjs" />
-						<img src={typescript} className="skills-logo" alt="typescript" />
-						<img src={postcss} className="skills-logo" alt="postcss" />						
+						<div className="skills-title"><h2>What I{"'"}m learning</h2></div>		
+						<div className="skills-logo-box"><img src={angularjs} className="skills-logo" alt="angularjs" />Angular.js</div>
+						<div className="skills-logo-box"><img src={typescript} className="skills-logo" alt="typescript" />TypeScript</div>
+						<div className="skills-logo-box"><img src={postcss} className="skills-logo" alt="postcss" />postCSS</div>					
 					</div>
 				</div>
 			</div>

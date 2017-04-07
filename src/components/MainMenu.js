@@ -18,9 +18,9 @@ class MainMenu extends Component {
 				<div className="nav">
 					<ul>
 						<Link to="/about" className="aboutLink"><li><span>About</span></li></Link>
-						<Link to="/Portfolio" className="portfolioLink"><li><span>Portfolio</span></li></Link>
+						<Link to="/projects" className="portfolioLink"><li><span>Projects</span></li></Link>
 						<a href={require("../WorkResume.pdf")} className="resumeLink" target="_blank"><li><span>Resume</span></li></a>
-						<Link to="/Contact" className="contactLink"><li><span>Contact</span></li></Link>
+						<Link to="/contact" className="contactLink"><li><span>Contact</span></li></Link>
 					</ul>
 				</div>
 				<div className="social-links">

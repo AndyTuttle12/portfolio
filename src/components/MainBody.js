@@ -74,10 +74,10 @@ class MainBody extends Component {
 				<div className={this.state.msgSent}><h2>{this.state.msg1}<br/>{this.state.msg2}</h2></div>
 				<div className="centered" onMouseMove={this.onMouseMove} ref="foreground">
 					<div className="hero">
-						<h1>Hi there</h1>
+						<h1>Hi there!</h1>
 					</div>
 					<div className="sub-title">
-						<h2>I{"'"}m glad you found me</h2>
+						<h2>I{"'"}m glad you found me.</h2>
 					</div>
 					<div className="text">
 						<h3>Andy Tuttle, Full-Stack Software Engineer</h3>

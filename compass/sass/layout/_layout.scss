@@ -87,9 +87,10 @@ html{
 			margin: auto;
 			@include text();
 			ul{
-				margin-left: -60px;
+				margin-left: -90px;
 				li, a{
-					padding-left: 0px;
+					text-align: center;
+					padding-left: -50px;
 					margin-left:50px;
 					list-style: none;
 					// line-height: 4em;
