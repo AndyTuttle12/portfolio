@@ -23,6 +23,9 @@ import nodejs from '../../devicon-master/icons/nodejs/nodejs-original-wordmark.s
 import python from '../../devicon-master/icons/python/python-original-wordmark.svg';
 import typescript from '../../devicon-master/icons/typescript/typescript-original.svg';
 import jasmine from '../../devicon-master/icons/jasmine/jasmine-plain-wordmark.svg';
+import java from '../../devicon-master/icons/java/java-original-wordmark.svg';
+import gradle from '../../devicon-master/icons/gradle/gradle-plain-wordmark.svg';
+import springBoot from '../spring-boot.png';
 import pug from '../pug-logo.svg';
 import postcss from '../postcss.svg';
 import webpack from '../webpack.svg';
@@ -72,7 +75,10 @@ class About extends Component {
 						<div className="skills-title"><h2>What I{"'"}m learning</h2></div>		
 						<div className="skills-logo-box"><img src={angularjs} className="skills-logo" alt="angularjs" />Angular.js</div>
 						<div className="skills-logo-box"><img src={typescript} className="skills-logo" alt="typescript" />TypeScript</div>
-						<div className="skills-logo-box"><img src={postcss} className="skills-logo" alt="postcss" />postCSS</div>					
+						<div className="skills-logo-box"><img src={postcss} className="skills-logo" alt="postcss" />postCSS</div>
+						<div className="skills-logo-box"><img src={java} className="skills-logo" alt="java" />Java</div>
+						<div className="skills-logo-box"><img src={springBoot} className="skills-logo" alt="spring-boot" />Spring Boot</div>
+						<div className="skills-logo-box"><img src={gradle} className="skills-logo" alt="gradle" />Gradle</div>					
 					</div>
 				</div>
 			</div>
