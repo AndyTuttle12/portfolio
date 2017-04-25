@@ -35,6 +35,17 @@ class Portfolio extends Component {
 						<p>HTML/CSS, Bootstrap, JavaScript, jQuery, The Movie Database API and YouTube Player iframe API</p>
 					</div>
 				</div>
+				<div className="feature projects">
+					<a href="http://andytuttle.io/blackjack" target="_blank"><h2>Blackjack Game</h2></a>
+					<a href="http://andytuttle.io/blackjack" target="_blank"><img src={require('../deal-shot.png')} alt="Blackjack"/></a>
+					<div className="overlay">
+						<div className="arrow"></div>
+						<h3>Project overview:</h3>
+						<p>An interactive Las Vegas styled casino game! The game includes all logic for dealing, betting and more advanced features like double downs, splits, taking insurance against dealer blackjacks, and multiple side bets. It{"'"}s hard to believe that it is completely made with simple JavaScript and jQuery interactions!</p>
+						<h3>Technology used:</h3>
+						<p>HTML/CSS, Bootstrap, JavaScript, jQuery and jQuery UI</p>
+					</div>
+				</div>
 			</div>
 		)
 	}
