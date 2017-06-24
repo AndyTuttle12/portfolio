@@ -31,6 +31,8 @@ import postcss from '../postcss.svg';
 import webpack from '../webpack.svg';
 import socketio from '../socket-io.svg';
 import redux from '../redux.svg';
+import clojure from '../clojure.svg';
+import android from '../android.svg';
 import '../styles.css';
 
 class About extends Component {
@@ -49,7 +51,6 @@ class About extends Component {
 					<div className="currentSkills">
 						<div className="skills-title"><h2>What I know</h2></div>
 						<div className="skills-logo-box"><img src={html5} className="skills-logo" alt="html5" />HTML5</div>
-						
 						<div className="skills-logo-box"><img src={css3} className="skills-logo" alt="css3" />CSS3</div>
 						<div className="skills-logo-box"><img src={javascript} className="skills-logo" alt="javascript" />JavaScript</div>
 						<div className="skills-logo-box"><img src={react} className="skills-logo" alt="react" />react.js</div>
@@ -70,15 +71,17 @@ class About extends Component {
 						<div className="skills-logo-box"><img src={jasmine} className="skills-logo" alt="jasmine" />Jasmine</div>
 						<div className="skills-logo-box"><img src={redux} className="skills-logo" alt="redux" />Redux</div>
 						<div className="skills-logo-box"><img src={webpack} className="skills-logo" alt="webpack" />Webpack</div>
-					</div>
-					<div className="futureSkills">
-						<div className="skills-title"><h2>What I{"'"}m learning</h2></div>		
 						<div className="skills-logo-box"><img src={angularjs} className="skills-logo" alt="angularjs" />Angular.js</div>
 						<div className="skills-logo-box"><img src={typescript} className="skills-logo" alt="typescript" />TypeScript</div>
 						<div className="skills-logo-box"><img src={postcss} className="skills-logo" alt="postcss" />postCSS</div>
+					</div>
+					<div className="futureSkills">
+						<div className="skills-title"><h2>What I{"'"}m learning</h2></div>		
+						<div className="skills-logo-box"><img src={clojure} className="skills-logo" alt="clojure" />Clojure</div>
 						<div className="skills-logo-box"><img src={java} className="skills-logo" alt="java" />Java</div>
 						<div className="skills-logo-box"><img src={springBoot} className="skills-logo" alt="spring-boot" />Spring Boot</div>
-						<div className="skills-logo-box"><img src={gradle} className="skills-logo" alt="gradle" />Gradle</div>					
+						<div className="skills-logo-box"><img src={gradle} className="skills-logo" alt="gradle" />Gradle</div>
+						<div className="skills-logo-box"><img src={android} className="skills-logo" alt="android" />Android</div>					
 					</div>
 				</div>
 			</div>
