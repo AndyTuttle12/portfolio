@@ -25,6 +25,7 @@ import typescript from '../../devicon-master/icons/typescript/typescript-origina
 import jasmine from '../../devicon-master/icons/jasmine/jasmine-plain-wordmark.svg';
 import java from '../../devicon-master/icons/java/java-original-wordmark.svg';
 import gradle from '../../devicon-master/icons/gradle/gradle-plain-wordmark.svg';
+import cpp from '../../devicon-master/icons/cplusplus/cplusplus-original.svg';
 import springBoot from '../spring-boot.png';
 import pug from '../pug-logo.svg';
 import postcss from '../postcss.svg';
@@ -63,7 +64,7 @@ class About extends Component {
 						<div className="skills-logo-box"><img src={babel} className="skills-logo" alt="babel" />Babel</div>
 						<div className="skills-logo-box"><img src={linux} className="skills-logo" alt="linux" />Linux</div>
 						<div className="skills-logo-box"><img src={nodejs} className="skills-logo" alt="nodejs" />node.js</div>
-						<div className="skills-logo-box"><img src={mongodb} className="skills-logo" alt="mongodb" />MongoDB</div>	
+						<div className="skills-logo-box"><img src={mongodb} className="skills-logo" alt="mongodb" />MongoDB</div>
 						<div className="skills-logo-box"><img src={socketio} className="skills-logo" alt="socketio" />socket.io</div>
 						<div className="skills-logo-box"><img src={mysql} className="skills-logo" alt="mysql" />MySQL</div>
 						<div className="skills-logo-box"><img src={pug} className="skills-logo" alt="pug" />Pug</div>
@@ -76,12 +77,13 @@ class About extends Component {
 						<div className="skills-logo-box"><img src={postcss} className="skills-logo" alt="postcss" />postCSS</div>
 					</div>
 					<div className="futureSkills">
-						<div className="skills-title"><h2>What I{"'"}m learning</h2></div>		
+						<div className="skills-title"><h2>What I{"'"}m learning</h2></div>
 						<div className="skills-logo-box"><img src={clojure} className="skills-logo" alt="clojure" />Clojure</div>
 						<div className="skills-logo-box"><img src={java} className="skills-logo" alt="java" />Java</div>
 						<div className="skills-logo-box"><img src={springBoot} className="skills-logo" alt="spring-boot" />Spring Boot</div>
 						<div className="skills-logo-box"><img src={gradle} className="skills-logo" alt="gradle" />Gradle</div>
-						<div className="skills-logo-box"><img src={android} className="skills-logo" alt="android" />Android</div>					
+						<div className="skills-logo-box"><img src={android} className="skills-logo" alt="android" />Android</div>
+						<div className="skills-logo-box"><img src={cpp} className="skills-logo" alt="cpp" />C++</div>
 					</div>
 				</div>
 			</div>
